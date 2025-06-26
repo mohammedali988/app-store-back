@@ -78,7 +78,12 @@ const productSchema = new mongoose.Schema(
   },
   { timestamps: true }
 );
-
+productSchema.pre(/^find/, function (next) {
+  this.populate({
+    path: "category",
+  });
+  next();
+});
 productSchema.pre("save", function (next) {
   if (this.discount > 0) {
     this.priceAfterDiscount = this.price - (this.price * this.discount) / 100;
