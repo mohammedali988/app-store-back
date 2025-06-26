@@ -9,6 +9,6 @@ adminRouter.put("/:id",autharication,authrazation("admin"),toggleUserStatus)
 adminRouter.get("/profile",autharication,checkUserActive)
 adminRouter.get("/",autharication,authrazation("admin"),getAllUsers)
 adminRouter.get("/:id",autharication,authrazation("admin"),getUserById)
-adminRouter.get("/", autharication, authrazation("admin"), getAllOrders);
+adminRouter.get("/orders", autharication, authrazation("admin"), getAllOrders);
 
 export {adminRouter}

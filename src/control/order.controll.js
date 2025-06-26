@@ -70,6 +70,8 @@ export const makeOrder = Errorhandler(async (req, res) => {
 });
 //get all order for admin================================================================
 export const getAllOrders = async (req, res) => {
+    console.log("hiiiiiiiiiiiii");
+    
   try {
     const orders = await orderModel.find()
       .populate({ path: "userId", select: "username" });  
