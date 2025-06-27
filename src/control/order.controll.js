@@ -70,7 +70,6 @@ export const makeOrder = Errorhandler(async (req, res) => {
 });
 //get all order for admin================================================================
 export const getAllOrders = async (req, res) => {
-    console.log("hiiiiiiiiiiiii");
     
   try {
     const orders = await orderModel.find()
@@ -80,6 +79,7 @@ export const getAllOrders = async (req, res) => {
       success: true,
       count: orders.length,
       data: orders,
+      meta:req.meta
     });
   } catch (error) {
     res.status(500).json({ success: false, message: error.message });

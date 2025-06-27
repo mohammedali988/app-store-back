@@ -43,7 +43,8 @@ export const getAllUsers = Errorhandler(async (req, res) => {
 
         res.status(200).json({
             message: "Sucesses,to get users",
-            data: users
+            data: users,
+            meta:req.meta
         });
 
     } catch (error) {
