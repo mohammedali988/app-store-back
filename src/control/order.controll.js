@@ -73,8 +73,8 @@ export const getAllOrders = async (req, res) => {
     
   try {
     const orders = await orderModel.find()
-      .populate({ path: "userId", select: "username" })  
-      .populate({ path: "productId", select: "name price" });
+      .populate({ path: "userId", select: "name" })  
+      .populate({ path: "productId"});
 
     res.status(200).json({
       success: true,
