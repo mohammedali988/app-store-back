@@ -11,8 +11,7 @@ let categorySchema = new mongoose.Schema({
     required: true,
     trim: true,
     minLength: [3, "Title is short"],
-    unique: [true, 'SubCategory must be unique'],
-
+    unique: true
   },
   imageSrc: {
     type: String,
