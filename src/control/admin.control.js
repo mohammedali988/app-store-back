@@ -37,21 +37,36 @@ export const checkUserActive = async (req, res, next) => {
 
 //list of users=========================================================================
 export const getAllUsers = Errorhandler(async (req, res) => {
-    try {
-    
-        const users = await userModel.find({ role: "user"}, { password: 0 });
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
 
-        res.status(200).json({
-            message: "Sucesses,to get users",
-            data: users,
-            meta:req.meta
-        });
+    const users = await userModel
+      .find({ role: "user" }, { password: 0 })
+      .skip(skip)
+      .limit(limit);
 
-    } catch (error) {
-        res.status(500).json({ message: "Error in get message", error });
-    }
-}
-)
+    const totalRows = await userModel.countDocuments({ role: "user" });
+    const noOfPages = Math.ceil(totalRows / limit);
+
+    res.status(200).json({
+      message: "Success, to get users",
+      data: users,
+      meta: {
+        totalRows,
+        noOfPages,
+        currentPage: page,
+        perPage: limit,
+        hasNext: page < noOfPages,
+        hasPrev: page > 1,
+      },
+    });
+  } catch (error) {
+    res.status(500).json({ message: "Error in get users", error });
+  }
+});  
+
 
 //get user by ID=================================================================
 export const getUserById = Errorhandler(async (req, res) => {
