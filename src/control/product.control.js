@@ -1,5 +1,6 @@
 import { Categorymodel } from "../model/category.model.js";
 import { productModel } from "../model/product.model.js";
+import { ratingModel } from "../model/rating.model.js";
 import { Errorhandler, sendError } from "../service/errorHandler.js";
 
 export const addProduct = Errorhandler(async (req, res) => {
@@ -57,3 +58,12 @@ export const getMiddlewarefilter = (model) =>
     req.queryMongoose = queryObj;
     next();
   });
+
+export const getAllRating = Errorhandler(async (req, res) => {
+  const rating = await ratingModel.find({ productId: req.params.productId });
+  if (!rating) throw new sendError(400, "Error in fetch rate for the product");
+  res.status(200).json({
+    message: "success,",
+    data: rating,
+  });
+});
