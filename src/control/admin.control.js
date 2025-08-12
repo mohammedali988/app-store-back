@@ -1,3 +1,4 @@
+import { settingModel } from "../model/settings.js";
 import { userModel } from "../model/user.model.js";
 import { Errorhandler, sendError } from "../service/errorHandler.js";
 
@@ -107,6 +108,46 @@ export const toggleUserRole = Errorhandler(async (req, res) => {
     res.status(error.status || 500).json({
       success: false,
       message: error.message || "Error updating user role",
+    });
+  }
+});
+
+//  handle maintenance for the website
+
+export const handleMaintenance = Errorhandler(async (req, res) => {
+  try {
+    const { status } = req.body;
+    const settings = await settingModel.findOneAndUpdate(
+      {},
+      { isMaintenance: status },
+      { new: true, upsert: true }
+    );
+
+    if (!settings) res.status(400).json("Some thing went wrong while updating");
+
+    return res.status(200).json({ isMaintenance: settings.isMaintenance });
+  } catch (error) {
+    res.status(error.status || 500).json({
+      success: false,
+      message: error.message || "Error updating the maintenance",
+    });
+  }
+});
+
+export const getMaintenance = Errorhandler(async (req, res) => {
+  try {
+    const settings = await settingModel.find();
+
+    if (!settings)
+      res
+        .status(400)
+        .json("Some thing went wrong while getting the maintenance");
+
+    return res.status(200).json({ isMaintenance: settings.isMaintenance });
+  } catch (error) {
+    res.status(error.status || 500).json({
+      success: false,
+      message: error.message || "Error updating the maintenance",
     });
   }
 });
