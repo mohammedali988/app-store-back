@@ -134,20 +134,25 @@ export const handleMaintenance = Errorhandler(async (req, res) => {
   }
 });
 
+//get maintance==============================================
+
 export const getMaintenance = Errorhandler(async (req, res) => {
   try {
-    const settings = await settingModel.find();
+    const setting = await settingModel.findOne();
 
-    if (!settings)
-      res
-        .status(400)
-        .json("Some thing went wrong while getting the maintenance");
+    if (!setting) {
+      return res.status(404).json({
+        success: false,
+        message: "No maintenance settings found",
+      });
+    }
 
-    return res.status(200).json({ isMaintenance: settings.isMaintenance });
+    return res.status(200).json({ isMaintenance: setting.isMaintenance });
   } catch (error) {
-    res.status(error.status || 500).json({
+    return res.status(error.status || 500).json({
       success: false,
-      message: error.message || "Error updating the maintenance",
+      message: error.message || "Error getting the maintenance status",
     });
   }
 });
+

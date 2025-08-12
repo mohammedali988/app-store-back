@@ -8,15 +8,17 @@ import { orderModel } from "../model/orderId.model.js";
 
 const adminRouter = Router()
 
-adminRouter.put("/:id",autharication,authrazation("admin"),toggleUserStatus)
-adminRouter.put("/role/:id",autharication,authrazation("admin"),toggleUserRole)
-adminRouter.get("/profile",autharication,checkUserActive)
-adminRouter.get("/",autharication,authrazation("admin"),getAllUsers)
-adminRouter.get("/:id",autharication,authrazation("admin"),getUserById)
-adminRouter.post("/maintenance",autharication,authrazation("admin"),handleMaintenance)
-adminRouter.get("/maintenance",autharication, getMaintenance)
+adminRouter.put("/role/:id", autharication, authrazation("admin"), toggleUserRole);
+adminRouter.put("/:id", autharication, authrazation("admin"), toggleUserStatus);
 
+adminRouter.get("/profile", autharication, checkUserActive);
+adminRouter.get("/", autharication, authrazation("admin"), getAllUsers);
 
-adminRouter.get("/getOrder/:id", autharication, authrazation("admin"),paganationMiddlewearefilter(orderModel),getAllOrders);
+adminRouter.get("/maintenance", autharication, getMaintenance);
+adminRouter.post("/maintenance", autharication, authrazation("admin"), handleMaintenance);
+
+adminRouter.get("/getOrder/:id", autharication, authrazation("admin"), paganationMiddlewearefilter(orderModel), getAllOrders);
+
+adminRouter.get("/:id", autharication, authrazation("admin"), getUserById);
 
 export {adminRouter}

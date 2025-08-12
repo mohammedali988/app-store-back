@@ -11,7 +11,7 @@ import { subcategoryRouter } from "../routes/SubCategory.rotes.js";
 
 
 const v1Router = Router()
-
+ 
 v1Router.use("/user",usersRouter)
 v1Router.use("/admin",adminRouter)
 v1Router.use("/product",productRouter)
