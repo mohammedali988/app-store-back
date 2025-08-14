@@ -20,4 +20,6 @@ categoryRouter.delete("/",autharication,authrazation("admin"),deleteMiddleware(C
 categoryRouter.get("/",autharication,getMiddleware(Categorymodel),
 filterMiddleware("userId","id"),paganationMiddleweare(),excuteMiddleware)
 
+categoryRouter.get("/:id",getMiddleware(Categorymodel),filterMiddleware("_id","id"),excuteMiddleware)
+
 export{categoryRouter}
