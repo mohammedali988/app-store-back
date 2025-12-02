@@ -5,7 +5,7 @@ const orderSchema = new mongoose.Schema(
     userId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
-      required: "true",
+      required: true,
     },
     orderItem: [
       {
@@ -16,7 +16,7 @@ const orderSchema = new mongoose.Schema(
         productId: {
           type: mongoose.Schema.Types.ObjectId,
           ref: "Product",
-          required: "true",
+          required: true,
         },
       },
     ],
@@ -42,10 +42,6 @@ const orderSchema = new mongoose.Schema(
         required: true,
       },
     },
-    phone: {
-      type: String,
-      required: true,
-    },
     isPaid: {
       type: Boolean,
       default: false,
@@ -57,6 +53,7 @@ const orderSchema = new mongoose.Schema(
 orderSchema.pre(/^find/, function (next) {
   this.populate({
     path: "userId",
+    select: "name",
   }).populate({
     path: "orderItem.productId",
   });

@@ -69,11 +69,9 @@ export const paganationMiddlewearefilter = (model) => {
   };
 };
 
-
 // filter for user role=========================================
 export const userFilter = (req, res, next) => {
-  req.filter = { role: "user" }; 
-  req.queryMongoose = userModel.find(req.filter);  
+  req.filter = { role: "user" };
+  req.queryMongoose = userModel.find(req.filter);
   next();
 };
-
