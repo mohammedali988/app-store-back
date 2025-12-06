@@ -97,3 +97,18 @@ export const getAllOrders = async (req, res) => {
     res.status(500).json({ success: false, message: error.message });
   }
 };
+
+export const getOneOrder = async (req, res) => {
+  const { orderId } = req.params;
+
+  try {
+    const order = await orderModel.findById(orderId);
+
+    res.status(200).json({
+      success: true,
+      data: order,
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
