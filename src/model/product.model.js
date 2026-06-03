@@ -46,27 +46,16 @@ const productSchema = new mongoose.Schema(
       default: true,
       required: true,
     },
-    quantity: {
-      type: Number,
-      default: 1,
-      required: true,
-    },
-    color: {
-      type: String,
-    },
-    size: {
-      type: String,
-    },
     category: {
       type: mongoose.Schema.ObjectId,
       ref: "Category",
-      // required: [true, 'SubCategory must be belong to parent category'],
     },
     subCategory: {
       type: String,
     },
+    attributes: { type: Map, of: mongoose.Schema.Types.Mixed },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 productSchema.pre(/^find/, function (next) {
   this.populate({
