@@ -27,6 +27,7 @@ export const addMiddleware = (model) => {
   return async (req, res, next) => {
     try {
       const adding = await model.create(req.body);
+
       req.Query = adding;
       next();
     } catch (error) {
@@ -35,6 +36,7 @@ export const addMiddleware = (model) => {
         const field = Object.keys(error.keyValue)[0];
         error.message = `Duplicate value for field: ${field}`;
       }
+      console.error("Error in addMiddleware:", error);
       next(error);
     }
   };

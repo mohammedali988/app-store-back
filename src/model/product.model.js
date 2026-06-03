@@ -5,8 +5,6 @@ const productSchema = new mongoose.Schema(
     productName: {
       type: String,
       required: true,
-      minlength: [2, "title should unlees 2 "],
-      maxlength: [30, "title should not be bigger 30"],
     },
 
     description: {
@@ -47,13 +45,17 @@ const productSchema = new mongoose.Schema(
       required: true,
     },
     category: {
-      type: mongoose.Schema.ObjectId,
+      type: mongoose.Schema.Types.ObjectId,
       ref: "Category",
+      required: true,
     },
-    subCategory: {
-      type: String,
+    subCategory: { type: String, required: true, trim: true },
+
+    attributes: {
+      type: Map,
+      of: mongoose.Schema.Types.Mixed,
+      default: {},
     },
-    attributes: { type: Map, of: mongoose.Schema.Types.Mixed },
   },
   { timestamps: true },
 );
