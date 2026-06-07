@@ -7,6 +7,7 @@ import { stripePaymentRoutes } from "../routes/stripePayment.routes.js";
 import { payPalRouter } from "../routes/payPal.routes.js";
 import { categoryRouter } from "../routes/catogrery.rotes.js";
 import { subcategoryRouter } from "../routes/SubCategory.rotes.js";
+import { revenueRouter } from "../routes/revenueRoutes.js";
 
 
 
@@ -20,4 +21,5 @@ v1Router.use("/stripePayment",stripePaymentRoutes)
 v1Router.use("/paypalPayment",payPalRouter)
 v1Router.use("/category",categoryRouter)
 v1Router.use("/subcategory",subcategoryRouter)
+v1Router.use("/revenue",revenueRouter)
 export{v1Router}
