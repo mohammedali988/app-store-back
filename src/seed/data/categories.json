@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Electronics",
+    "subCategories": ["Phones", "Laptops", "Headphones", "Cameras", "Tablets"],
+    "attributes": [
+      { "name": "brand", "label": "Brand", "type": "text", "required": true, "options": [], "unit": "", "hint": "e.g. Samsung, Apple" },
+      { "name": "warranty", "label": "Warranty", "type": "number", "required": false, "options": [], "unit": "years", "hint": "" },
+      { "name": "condition", "label": "Condition", "type": "select", "required": true, "options": ["New", "Refurbished", "Used"], "unit": "", "hint": "" },
+      { "name": "color", "label": "Color", "type": "multiselect", "required": false, "options": ["Black", "White", "Silver", "Gold", "Blue"], "unit": "", "hint": "" },
+      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Electronics are counted in units" }
+    ]
+  },
+  {
+    "name": "Clothing",
+    "subCategories": ["Men", "Women", "Kids", "Sports", "Accessories"],
+    "attributes": [
+      { "name": "size", "label": "Size", "type": "multiselect", "required": true, "options": ["XS", "S", "M", "L", "XL", "XXL"], "unit": "", "hint": "" },
+      { "name": "material", "label": "Material", "type": "text", "required": false, "options": [], "unit": "", "hint": "" },
+      { "name": "color", "label": "Color", "type": "multiselect", "required": true, "options": ["Black", "White", "Red", "Blue", "Green", "Yellow"], "unit": "", "hint": "" },
+      { "name": "gender", "label": "Gender", "type": "select", "required": true, "options": ["Male", "Female", "Unisex"], "unit": "", "hint": "" },
+      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Clothing is counted in units" }
+    ]
+  },
+  {
+    "name": "Grocery",
+    "subCategories": ["Vegetables", "Fruits", "Dairy", "Meat", "Bakery"],
+    "attributes": [
+      { "name": "origin", "label": "Origin", "type": "text", "required": false, "options": [], "unit": "", "hint": "e.g. Local, Imported" },
+      { "name": "organic", "label": "Organic", "type": "select", "required": false, "options": ["Yes", "No"], "unit": "", "hint": "" },
+      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["kg", "g", "liters", "ml", "units"], "unit": "", "hint": "Choose the unit that matches this product" }
+    ]
+  },
+  {
+    "name": "Furniture",
+    "subCategories": ["Living Room", "Bedroom", "Office", "Kitchen", "Outdoor"],
+    "attributes": [
+      { "name": "material", "label": "Material", "type": "select", "required": true, "options": ["Wood", "Metal", "Plastic", "Glass", "Fabric"], "unit": "", "hint": "" },
+      { "name": "weight", "label": "Weight", "type": "number", "required": false, "options": [], "unit": "kg", "hint": "" },
+      { "name": "dimensions", "label": "Dimensions", "type": "text", "required": false, "options": [], "unit": "cm", "hint": "W x H x D" },
+      { "name": "color", "label": "Color", "type": "select", "required": false, "options": ["Brown", "Black", "White", "Gray", "Natural"], "unit": "", "hint": "" },
+      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Furniture is counted in units" }
+    ]
+  },
+  {
+    "name": "Sports",
+    "subCategories": ["Fitness", "Football", "Basketball", "Running", "Swimming"],
+    "attributes": [
+      { "name": "brand", "label": "Brand", "type": "text", "required": true, "options": [], "unit": "", "hint": "" },
+      { "name": "size", "label": "Size", "type": "select", "required": false, "options": ["XS", "S", "M", "L", "XL"], "unit": "", "hint": "" },
+      { "name": "weight", "label": "Weight", "type": "number", "required": false, "options": [], "unit": "kg", "hint": "" },
+      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units", "kg"], "unit": "", "hint": "" }
+    ]
+  },
+  {
+    "name": "Books",
+    "subCategories": ["Fiction", "Non-Fiction", "Science", "History", "Self-Help"],
+    "attributes": [
+      { "name": "author", "label": "Author", "type": "text", "required": true, "options": [], "unit": "", "hint": "" },
+      { "name": "language", "label": "Language", "type": "select", "required": true, "options": ["English", "Arabic", "French", "Spanish"], "unit": "", "hint": "" },
+      { "name": "pages", "label": "Pages", "type": "number", "required": false, "options": [], "unit": "pages", "hint": "" },
+      { "name": "publisher", "label": "Publisher", "type": "text", "required": false, "options": [], "unit": "", "hint": "" },
+      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Books are counted in units" }
+    ]
+  }
+]

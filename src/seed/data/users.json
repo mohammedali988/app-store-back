@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Ahmed Hassan",
+    "email": "ahmed.hassan@gmail.com",
+    "password": "password123",
+    "phone": 970591234567,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Ramallah", "street": "Al-Bireh St" },
+    "balance": 150,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Sara Ali",
+    "email": "sara.ali@gmail.com",
+    "password": "password123",
+    "phone": 970592345678,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Nablus", "street": "Al-Midan St" },
+    "balance": 320,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Mohammed Khalil",
+    "email": "mohammed.k@gmail.com",
+    "password": "password123",
+    "phone": 970593456789,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Hebron", "street": "King David St" },
+    "balance": 500,
+    "withdrawableBalance": 100
+  },
+  {
+    "name": "Lina Nasser",
+    "email": "lina.nasser@gmail.com",
+    "password": "password123",
+    "phone": 970594567890,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Gaza", "street": "Omar Mukhtar St" },
+    "balance": 75,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Omar Saleh",
+    "email": "omar.saleh@gmail.com",
+    "password": "password123",
+    "phone": 970595678901,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Jenin", "street": "Al-Quds St" },
+    "balance": 200,
+    "withdrawableBalance": 50
+  },
+  {
+    "name": "Rania Yousef",
+    "email": "rania.y@gmail.com",
+    "password": "password123",
+    "phone": 970596789012,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Tulkarm", "street": "Al-Ittihad St" },
+    "balance": 430,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Kareem Mansour",
+    "email": "kareem.m@gmail.com",
+    "password": "password123",
+    "phone": 970597890123,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Bethlehem", "street": "Manger St" },
+    "balance": 90,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Dina Farouk",
+    "email": "dina.f@gmail.com",
+    "password": "password123",
+    "phone": 970598901234,
+    "role": "user",
+    "active": false,
+    "adress": { "country": "Palestine", "city": "Jericho", "street": "Al-Nakheel St" },
+    "balance": 0,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Tarek Ibrahim",
+    "email": "tarek.i@gmail.com",
+    "password": "password123",
+    "phone": 970599012345,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Ramallah", "street": "Rukab St" },
+    "balance": 610,
+    "withdrawableBalance": 200
+  },
+  {
+    "name": "Nour Mahmoud",
+    "email": "nour.m@gmail.com",
+    "password": "password123",
+    "phone": 970591122334,
+    "role": "user",
+    "active": true,
+    "adress": { "country": "Palestine", "city": "Nablus", "street": "Faisal St" },
+    "balance": 260,
+    "withdrawableBalance": 0
+  }
+]

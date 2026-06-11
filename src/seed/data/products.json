@@ -1,0 +1,353 @@
+[
+  {
+    "productName": "Samsung Galaxy S24",
+    "description": "Latest Samsung flagship smartphone with 6.2-inch Dynamic AMOLED display, 50MP camera system, and Snapdragon 8 Gen 3 processor for ultimate performance.",
+    "price": 899,
+    "discount": 5,
+    "category": "Electronics",
+    "subCategory": "Phones",
+    "availability": true,
+    "stock": { "value": 45, "unit": "units", "lowStockThreshold": 5 },
+    "productImages": [
+      { "filePath": "/seed/electronics-phone-1.jpg", "fileId": "seed_phone_001" },
+      { "filePath": "/seed/electronics-phone-1b.jpg", "fileId": "seed_phone_001b" }
+    ],
+    "attributes": { "brand": "Samsung", "warranty": 2, "condition": "New", "color": ["Black", "Silver"], "stockUnit": "units" }
+  },
+  {
+    "productName": "Apple iPhone 15 Pro",
+    "description": "Apple iPhone 15 Pro with titanium design, A17 Pro chip, 48MP main camera, and USB-C connectivity. The most powerful iPhone ever made for professionals.",
+    "price": 1199,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Phones",
+    "availability": true,
+    "stock": { "value": 30, "unit": "units", "lowStockThreshold": 5 },
+    "productImages": [
+      { "filePath": "/seed/electronics-phone-2.jpg", "fileId": "seed_phone_002" }
+    ],
+    "attributes": { "brand": "Apple", "warranty": 1, "condition": "New", "color": ["Black", "White", "Gold"], "stockUnit": "units" }
+  },
+  {
+    "productName": "Sony WH-1000XM5 Headphones",
+    "description": "Industry-leading noise canceling wireless headphones with 30-hour battery life, multipoint connection, and crystal-clear hands-free calling in any situation.",
+    "price": 349,
+    "discount": 10,
+    "category": "Electronics",
+    "subCategory": "Headphones",
+    "availability": true,
+    "stock": { "value": 4, "unit": "units", "lowStockThreshold": 5 },
+    "productImages": [
+      { "filePath": "/seed/electronics-headphones-1.jpg", "fileId": "seed_head_001" }
+    ],
+    "attributes": { "brand": "Sony", "warranty": 1, "condition": "New", "color": ["Black", "Silver"], "stockUnit": "units" }
+  },
+  {
+    "productName": "MacBook Pro 14-inch M3",
+    "description": "MacBook Pro with M3 chip delivers exceptional performance for professionals. Features a stunning Liquid Retina XDR display and up to 22 hours of battery life.",
+    "price": 1999,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Laptops",
+    "availability": true,
+    "stock": { "value": 15, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/electronics-laptop-1.jpg", "fileId": "seed_laptop_001" }
+    ],
+    "attributes": { "brand": "Apple", "warranty": 1, "condition": "New", "color": ["Silver"], "stockUnit": "units" }
+  },
+  {
+    "productName": "Dell XPS 15",
+    "description": "Premium Dell XPS 15 laptop with Intel Core i7 processor, 16GB RAM, 512GB SSD, and a gorgeous 15.6-inch OLED touch display for creative professionals.",
+    "price": 1499,
+    "discount": 8,
+    "category": "Electronics",
+    "subCategory": "Laptops",
+    "availability": true,
+    "stock": { "value": 20, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/electronics-laptop-2.jpg", "fileId": "seed_laptop_002" }
+    ],
+    "attributes": { "brand": "Dell", "warranty": 2, "condition": "New", "color": ["Silver", "Black"], "stockUnit": "units" }
+  },
+  {
+    "productName": "iPad Air 5th Generation",
+    "description": "Powerful iPad Air with M1 chip, 10.9-inch Liquid Retina display, 5G capability, and support for Apple Pencil and Magic Keyboard for versatile productivity.",
+    "price": 749,
+    "discount": 5,
+    "category": "Electronics",
+    "subCategory": "Tablets",
+    "availability": true,
+    "stock": { "value": 25, "unit": "units", "lowStockThreshold": 5 },
+    "productImages": [
+      { "filePath": "/seed/electronics-tablet-1.jpg", "fileId": "seed_tablet_001" }
+    ],
+    "attributes": { "brand": "Apple", "warranty": 1, "condition": "New", "color": ["Blue", "Silver", "Gold"], "stockUnit": "units" }
+  },
+  {
+    "productName": "Canon EOS R50 Camera",
+    "description": "Compact mirrorless camera with 24.2MP APS-C sensor, 4K video recording, fast autofocus with subject tracking, and Wi-Fi connectivity for content creators.",
+    "price": 679,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Cameras",
+    "availability": true,
+    "stock": { "value": 3, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/electronics-camera-1.jpg", "fileId": "seed_cam_001" }
+    ],
+    "attributes": { "brand": "Canon", "warranty": 1, "condition": "New", "color": ["Black", "White"], "stockUnit": "units" }
+  },
+  {
+    "productName": "Men's Classic Slim Fit Jeans",
+    "description": "Premium quality slim fit jeans for men made from 98% cotton and 2% elastane. Comfortable stretch fabric that moves with you throughout the day.",
+    "price": 59,
+    "discount": 15,
+    "category": "Clothing",
+    "subCategory": "Men",
+    "availability": true,
+    "stock": { "value": 80, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/clothing-jeans-1.jpg", "fileId": "seed_cloth_001" }
+    ],
+    "attributes": { "size": ["S", "M", "L", "XL"], "material": "Cotton", "color": ["Black", "Blue"], "gender": "Male", "stockUnit": "units" }
+  },
+  {
+    "productName": "Women's Floral Summer Dress",
+    "description": "Beautiful floral print summer dress with a flattering A-line silhouette. Made from lightweight breathable fabric, perfect for warm weather and casual occasions.",
+    "price": 45,
+    "discount": 20,
+    "category": "Clothing",
+    "subCategory": "Women",
+    "availability": true,
+    "stock": { "value": 60, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/clothing-dress-1.jpg", "fileId": "seed_cloth_002" }
+    ],
+    "attributes": { "size": ["XS", "S", "M", "L"], "material": "Polyester", "color": ["Red", "Blue", "Yellow"], "gender": "Female", "stockUnit": "units" }
+  },
+  {
+    "productName": "Nike Air Max 270 Sneakers",
+    "description": "Nike Air Max 270 features the brand's largest Air unit yet for all-day comfort. Mesh upper provides breathability while the foam midsole delivers cushioned support.",
+    "price": 149,
+    "discount": 0,
+    "category": "Clothing",
+    "subCategory": "Sports",
+    "availability": true,
+    "stock": { "value": 7, "unit": "units", "lowStockThreshold": 8 },
+    "productImages": [
+      { "filePath": "/seed/clothing-shoes-1.jpg", "fileId": "seed_cloth_003" }
+    ],
+    "attributes": { "size": ["S", "M", "L", "XL"], "material": "Mesh", "color": ["Black", "White", "Red"], "gender": "Unisex", "stockUnit": "units" }
+  },
+  {
+    "productName": "Kids Cartoon Hoodie",
+    "description": "Cute and cozy hoodie for kids featuring popular cartoon characters. Made from soft 100% cotton fleece fabric, machine washable and durable for active children.",
+    "price": 29,
+    "discount": 10,
+    "category": "Clothing",
+    "subCategory": "Kids",
+    "availability": true,
+    "stock": { "value": 50, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/clothing-kids-1.jpg", "fileId": "seed_cloth_004" }
+    ],
+    "attributes": { "size": ["XS", "S", "M"], "material": "Cotton", "color": ["Blue", "Red", "Yellow"], "gender": "Unisex", "stockUnit": "units" }
+  },
+  {
+    "productName": "Leather Bifold Wallet",
+    "description": "Handcrafted genuine leather bifold wallet with multiple card slots, cash compartment, and slim profile. RFID blocking technology protects your cards from skimming.",
+    "price": 39,
+    "discount": 0,
+    "category": "Clothing",
+    "subCategory": "Accessories",
+    "availability": true,
+    "stock": { "value": 4, "unit": "units", "lowStockThreshold": 5 },
+    "productImages": [
+      { "filePath": "/seed/clothing-wallet-1.jpg", "fileId": "seed_cloth_005" }
+    ],
+    "attributes": { "size": ["M"], "material": "Leather", "color": ["Black", "Brown"], "gender": "Unisex", "stockUnit": "units" }
+  },
+  {
+    "productName": "Modern L-Shaped Office Desk",
+    "description": "Spacious L-shaped office desk with two-tier design providing ample workspace. Made from engineered wood with steel legs, includes cable management holes.",
+    "price": 329,
+    "discount": 12,
+    "category": "Furniture",
+    "subCategory": "Office",
+    "availability": true,
+    "stock": { "value": 12, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/furniture-desk-1.jpg", "fileId": "seed_furn_001" }
+    ],
+    "attributes": { "material": "Wood", "weight": 45, "dimensions": "150 x 75 x 60", "color": "Brown", "stockUnit": "units" }
+  },
+  {
+    "productName": "Ergonomic Office Chair",
+    "description": "Premium ergonomic office chair with lumbar support, adjustable armrests, and breathable mesh back. Designed for long working hours with maximum comfort and posture support.",
+    "price": 249,
+    "discount": 0,
+    "category": "Furniture",
+    "subCategory": "Office",
+    "availability": true,
+    "stock": { "value": 18, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/furniture-chair-1.jpg", "fileId": "seed_furn_002" }
+    ],
+    "attributes": { "material": "Fabric", "weight": 15, "dimensions": "65 x 120 x 65", "color": "Black", "stockUnit": "units" }
+  },
+  {
+    "productName": "3-Seater Fabric Sofa",
+    "description": "Comfortable 3-seater sofa with high-density foam cushions and durable fabric upholstery. Modern design that fits perfectly in any living room with solid wood legs.",
+    "price": 699,
+    "discount": 8,
+    "category": "Furniture",
+    "subCategory": "Living Room",
+    "availability": true,
+    "stock": { "value": 2, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/furniture-sofa-1.jpg", "fileId": "seed_furn_003" }
+    ],
+    "attributes": { "material": "Fabric", "weight": 80, "dimensions": "210 x 85 x 90", "color": "Gray", "stockUnit": "units" }
+  },
+  {
+    "productName": "Queen Size Bed Frame",
+    "description": "Elegant queen size bed frame with upholstered headboard, solid wooden slats, and under-bed storage drawers. Easy assembly with all hardware included.",
+    "price": 499,
+    "discount": 5,
+    "category": "Furniture",
+    "subCategory": "Bedroom",
+    "availability": true,
+    "stock": { "value": 8, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/furniture-bed-1.jpg", "fileId": "seed_furn_004" }
+    ],
+    "attributes": { "material": "Wood", "weight": 60, "dimensions": "160 x 200 x 110", "color": "Brown", "stockUnit": "units" }
+  },
+  {
+    "productName": "Adjustable Dumbbell Set",
+    "description": "Versatile adjustable dumbbell set ranging from 5kg to 32kg per dumbbell. Quick-change weight system saves space and replaces 15 pairs of traditional dumbbells.",
+    "price": 299,
+    "discount": 0,
+    "category": "Sports",
+    "subCategory": "Fitness",
+    "availability": true,
+    "stock": { "value": 22, "unit": "units", "lowStockThreshold": 5 },
+    "productImages": [
+      { "filePath": "/seed/sports-dumbbell-1.jpg", "fileId": "seed_sport_001" }
+    ],
+    "attributes": { "brand": "PowerBlock", "size": "M", "weight": 32, "stockUnit": "units" }
+  },
+  {
+    "productName": "Adidas Running Shoes",
+    "description": "Lightweight Adidas running shoes with Boost cushioning technology for energy return. Breathable Primeknit upper and Continental rubber outsole for superior grip.",
+    "price": 129,
+    "discount": 10,
+    "category": "Sports",
+    "subCategory": "Running",
+    "availability": true,
+    "stock": { "value": 35, "unit": "units", "lowStockThreshold": 8 },
+    "productImages": [
+      { "filePath": "/seed/sports-shoes-1.jpg", "fileId": "seed_sport_002" }
+    ],
+    "attributes": { "brand": "Adidas", "size": "L", "weight": 0.3, "stockUnit": "units" }
+  },
+  {
+    "productName": "Official Size Football",
+    "description": "FIFA-approved official size football made from premium synthetic leather. Features 32-panel design for consistent flight and precise control in all weather conditions.",
+    "price": 49,
+    "discount": 0,
+    "category": "Sports",
+    "subCategory": "Football",
+    "availability": true,
+    "stock": { "value": 60, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/sports-football-1.jpg", "fileId": "seed_sport_003" }
+    ],
+    "attributes": { "brand": "Nike", "size": "M", "weight": 0.45, "stockUnit": "units" }
+  },
+  {
+    "productName": "Yoga Mat Premium",
+    "description": "Extra thick 6mm non-slip yoga mat with alignment lines for proper positioning. Made from eco-friendly TPE material, includes carrying strap and free yoga guide.",
+    "price": 39,
+    "discount": 5,
+    "category": "Sports",
+    "subCategory": "Fitness",
+    "availability": true,
+    "stock": { "value": 40, "unit": "units", "lowStockThreshold": 8 },
+    "productImages": [
+      { "filePath": "/seed/sports-yoga-1.jpg", "fileId": "seed_sport_004" }
+    ],
+    "attributes": { "brand": "Gaiam", "size": "L", "weight": 1.2, "stockUnit": "units" }
+  },
+  {
+    "productName": "Atomic Habits - James Clear",
+    "description": "The #1 New York Times bestseller. Learn how tiny changes in behavior can lead to remarkable results. Over 10 million copies sold worldwide with proven strategies for building good habits.",
+    "price": 18,
+    "discount": 0,
+    "category": "Books",
+    "subCategory": "Self-Help",
+    "availability": true,
+    "stock": { "value": 100, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/books-atomic-habits.jpg", "fileId": "seed_book_001" }
+    ],
+    "attributes": { "author": "James Clear", "language": "English", "pages": 320, "publisher": "Avery", "stockUnit": "units" }
+  },
+  {
+    "productName": "Sapiens: A Brief History of Humankind",
+    "description": "A groundbreaking narrative of humanity's creation and evolution exploring how biology and history have defined us and enhanced our understanding of what it means to be human.",
+    "price": 22,
+    "discount": 10,
+    "category": "Books",
+    "subCategory": "History",
+    "availability": true,
+    "stock": { "value": 75, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/books-sapiens.jpg", "fileId": "seed_book_002" }
+    ],
+    "attributes": { "author": "Yuval Noah Harari", "language": "English", "pages": 443, "publisher": "Harper", "stockUnit": "units" }
+  },
+  {
+    "productName": "The Great Gatsby",
+    "description": "F. Scott Fitzgerald's masterpiece about the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan, set against the backdrop of the Jazz Age.",
+    "price": 12,
+    "discount": 0,
+    "category": "Books",
+    "subCategory": "Fiction",
+    "availability": true,
+    "stock": { "value": 6, "unit": "units", "lowStockThreshold": 8 },
+    "productImages": [
+      { "filePath": "/seed/books-gatsby.jpg", "fileId": "seed_book_003" }
+    ],
+    "attributes": { "author": "F. Scott Fitzgerald", "language": "English", "pages": 180, "publisher": "Scribner", "stockUnit": "units" }
+  },
+  {
+    "productName": "A Brief History of Time",
+    "description": "Stephen Hawking's landmark book on cosmology explores subjects from the Big Bang to black holes to light cones, making complex scientific concepts accessible to general readers.",
+    "price": 16,
+    "discount": 5,
+    "category": "Books",
+    "subCategory": "Science",
+    "availability": true,
+    "stock": { "value": 50, "unit": "units", "lowStockThreshold": 10 },
+    "productImages": [
+      { "filePath": "/seed/books-hawking.jpg", "fileId": "seed_book_004" }
+    ],
+    "attributes": { "author": "Stephen Hawking", "language": "English", "pages": 212, "publisher": "Bantam Books", "stockUnit": "units" }
+  },
+  {
+    "productName": "Refurbished iPhone 13",
+    "description": "Certified refurbished Apple iPhone 13 with 128GB storage, A15 Bionic chip, and dual 12MP camera system. Fully tested and restored to factory settings with 90-day warranty.",
+    "price": 549,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Phones",
+    "availability": true,
+    "stock": { "value": 10, "unit": "units", "lowStockThreshold": 3 },
+    "productImages": [
+      { "filePath": "/seed/electronics-phone-3.jpg", "fileId": "seed_phone_003" }
+    ],
+    "attributes": { "brand": "Apple", "warranty": 0, "condition": "Refurbished", "color": ["Black", "White", "Blue"], "stockUnit": "units" }
+  }
+]

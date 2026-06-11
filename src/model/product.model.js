@@ -26,6 +26,16 @@ const productSchema = new mongoose.Schema(
       },
     ],
 
+    stock: {
+      value: { type: Number, default: 0 },
+      unit: {
+        type: String,
+        default: "units",
+        enum: ["units", "kg", "g", "liters", "ml", "meters", "cm"],
+      },
+      lowStockThreshold: { type: Number, default: 5 },
+    },
+
     price: {
       type: Number,
       required: true,
@@ -78,12 +88,17 @@ productSchema.pre("save", function (next) {
 });
 
 productSchema.pre("save", function (next) {
-  if (this.quantity === 0) {
-    this.availability = false;
-  } else {
-    this.availability = true;
+  this.availability = this.stock.value > 0;
+  if (this.discount > 0) {
+    this.priceAfterDiscount = this.price - (this.price * this.discount) / 100;
   }
   next();
+});
+
+productSchema.virtual("isLowStock").get(function () {
+  return (
+    this.stock.value <= this.stock.lowStockThreshold && this.stock.value > 0
+  );
 });
 
 export const productModel = mongoose.model("Product", productSchema);
