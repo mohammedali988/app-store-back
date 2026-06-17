@@ -29,6 +29,31 @@ export const getMiddlewarefilter = (model) =>
       filter.productName = { $regex: req.query.name, $options: "i" };
     }
 
+    // ── NEW: subCategory filter ──────────────────────────────────────
+    if (req.query.subCategory) {
+      filter.subCategory = {
+        $regex: `^${req.query.subCategory}$`,
+        $options: "i",
+      };
+    }
+
+    // ── NEW: price range filter ──────────────────────────────────────
+    if (req.query.minPrice || req.query.maxPrice) {
+      filter.price = {};
+      if (req.query.minPrice) filter.price.$gte = Number(req.query.minPrice);
+      if (req.query.maxPrice) filter.price.$lte = Number(req.query.maxPrice);
+    }
+
+    // ── NEW: color filter (attributes is a Map, "color" can be string or array) ──
+    if (req.query.color) {
+      filter["attributes.color"] = { $regex: req.query.color, $options: "i" };
+    }
+
+    // ── NEW: in-stock only filter ────────────────────────────────────
+    if (req.query.inStockOnly === "true") {
+      filter["stock.value"] = { $gt: 0 };
+    }
+
     req.filter = filter;
 
     let queryObj = model.find(filter);
@@ -51,7 +76,7 @@ export const getMiddlewarefilter = (model) =>
     ) {
       throw new sendError(
         400,
-        "Invalid sort type. Use 'top-rated' or 'most-sold'"
+        "Invalid sort type. Use 'top-rated' or 'most-sold'",
       );
     }
 

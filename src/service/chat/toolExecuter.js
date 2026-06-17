@@ -188,7 +188,7 @@ export async function executeTool(toolName, toolInput, userId, role) {
       const orders = await orderModel
         .find({ status: { $in: ["pending", "processing"] } })
         .limit(toolInput.limit ?? 20)
-        .populate("user", "name email")
+        .populate("userId")
         .lean();
       return orders.map((o) => ({
         id: o._id,
