@@ -1,23 +1,91 @@
 import { orderModel } from "../../model/orderId.model.js";
 import { productModel } from "../../model/product.model.js";
 import { userModel } from "../../model/user.model.js";
+import { Categorymodel } from "../../model/category.model.js";
 
 export async function executeTool(toolName, toolInput, userId, role) {
   switch (toolName) {
     case "search_products": {
-      const filter = {};
-      if (toolInput.query) filter.$text = { $search: toolInput.query };
-      if (toolInput.maxPrice) filter.price = { $lte: toolInput.maxPrice };
-      if (toolInput.category) filter.category = toolInput.category;
-      const products = await productModel.find(filter).limit(6).lean();
-      return products.map((p) => ({
-        id: p._id,
-        name: p.name,
-        price: p.price,
-        stock: p.stock,
-        category: p.category,
-        image: p.images?.[0],
-      }));
+      const filter = { availability: true };
+
+      // Keyword search across product name and description
+      if (toolInput.query) {
+        filter.$or = [
+          { productName: { $regex: toolInput.query, $options: "i" } },
+          { description: { $regex: toolInput.query, $options: "i" } },
+        ];
+      }
+
+      // Category filter — look up the category by name to get its ObjectId
+      if (toolInput.category) {
+        const categoryDoc = await Categorymodel.findOne({
+          name: { $regex: `^${toolInput.category}$`, $options: "i" },
+        }).lean();
+
+        if (categoryDoc) {
+          filter.category = categoryDoc._id;
+        } else {
+          // No matching category — return empty results rather than ignoring the filter
+          return {
+            products: [],
+            note: `No category found matching "${toolInput.category}"`,
+          };
+        }
+      }
+
+      // Subcategory filter (case-insensitive exact match)
+      if (toolInput.subCategory) {
+        filter.subCategory = {
+          $regex: `^${toolInput.subCategory}$`,
+          $options: "i",
+        };
+      }
+
+      // Price range
+      if (
+        toolInput.minPrice !== undefined ||
+        toolInput.maxPrice !== undefined
+      ) {
+        filter.price = {};
+        if (toolInput.minPrice !== undefined)
+          filter.price.$gte = toolInput.minPrice;
+        if (toolInput.maxPrice !== undefined)
+          filter.price.$lte = toolInput.maxPrice;
+      }
+
+      // Color filter — attributes is a Map, "color" can be a string or array
+      if (toolInput.color) {
+        filter["attributes.color"] = { $regex: toolInput.color, $options: "i" };
+      }
+
+      // Stock filter
+      if (toolInput.inStockOnly) {
+        filter["stock.value"] = { $gt: 0 };
+      }
+
+      const limit = Math.min(toolInput.limit ?? 6, 20);
+
+      const products = await productModel.find(filter).limit(limit).lean();
+
+      return {
+        count: products.length,
+        products: products.map((p) => ({
+          id: p._id,
+          name: p.productName,
+          price: p.price,
+          discount: p.discount,
+          priceAfterDiscount:
+            p.discount > 0
+              ? Math.round((p.price - (p.price * p.discount) / 100) * 100) / 100
+              : p.price,
+          category: p.category?.name ?? null,
+          subCategory: p.subCategory,
+          stock: p.stock ? `${p.stock.value} ${p.stock.unit}` : "unknown",
+          inStock: p.stock?.value > 0,
+          attributes: p.attributes,
+          image: p.productImages?.[0]?.filePath,
+        })),
+      };
     }
 
     case "get_order_status": {
@@ -171,6 +239,212 @@ export async function executeTool(toolName, toolInput, userId, role) {
         },
       ];
       return await orderModel.aggregate(pipeline);
+    }
+    case "find_matching_products": {
+      let referenceProduct = null;
+
+      // Try to load the reference product if provided
+      if (toolInput.referenceProductId) {
+        referenceProduct = await productModel
+          .findById(toolInput.referenceProductId)
+          .lean();
+      } else if (toolInput.referenceProductName) {
+        referenceProduct = await productModel
+          .findOne({
+            productName: {
+              $regex: toolInput.referenceProductName,
+              $options: "i",
+            },
+          })
+          .lean();
+      }
+
+      // Build the candidate filter
+      const filter = { availability: true, "stock.value": { $gt: 0 } };
+
+      // Resolve target category name → ObjectId
+      const categoryDoc = await Categorymodel.findOne({
+        name: { $regex: `^${toolInput.targetCategory}$`, $options: "i" },
+      }).lean();
+
+      if (!categoryDoc) {
+        return {
+          note: `No category found matching "${toolInput.targetCategory}"`,
+          candidates: [],
+        };
+      }
+      filter.category = categoryDoc._id;
+
+      if (toolInput.targetSubCategory) {
+        filter.subCategory = {
+          $regex: `^${toolInput.targetSubCategory}$`,
+          $options: "i",
+        };
+      }
+
+      // Optional color filter on candidates
+      if (toolInput.color) {
+        filter["attributes.color"] = { $regex: toolInput.color, $options: "i" };
+      }
+
+      // Exclude the reference product itself from results
+      if (referenceProduct) {
+        filter._id = { $ne: referenceProduct._id };
+      }
+
+      const limit = Math.min(toolInput.limit ?? 6, 15);
+      const candidates = await productModel.find(filter).limit(limit).lean();
+
+      return {
+        referenceProduct: referenceProduct
+          ? {
+              id: referenceProduct._id,
+              name: referenceProduct.productName,
+              category: referenceProduct.category?.name ?? null,
+              subCategory: referenceProduct.subCategory,
+              price: referenceProduct.price,
+              attributes: referenceProduct.attributes,
+            }
+          : null,
+        candidates: candidates.map((p) => ({
+          id: p._id,
+          name: p.productName,
+          price: p.price,
+          discount: p.discount,
+          priceAfterDiscount:
+            p.discount > 0
+              ? Math.round((p.price - (p.price * p.discount) / 100) * 100) / 100
+              : p.price,
+          category: p.category?.name ?? null,
+          subCategory: p.subCategory,
+          attributes: p.attributes,
+          stock: p.stock ? `${p.stock.value} ${p.stock.unit}` : "unknown",
+          image: p.productImages?.[0]?.filePath,
+        })),
+        instructions:
+          "Use the referenceProduct's color/style/attributes to decide which candidates pair well. " +
+          "Explain your reasoning to the customer (color coordination, style match, occasion, etc).",
+      };
+    }
+    case "get_orders_by_status": {
+      const filter = {};
+
+      if (toolInput.status) {
+        // Exact status takes priority over excludeStatus
+        filter.status = toolInput.status;
+      } else if (toolInput.excludeStatus) {
+        filter.status = { $ne: toolInput.excludeStatus };
+      }
+
+      if (toolInput.isPaid !== undefined) {
+        filter.isPaid = toolInput.isPaid;
+      }
+
+      const limit = Math.min(toolInput.limit ?? 20, 50);
+
+      const orders = await orderModel
+        .find(filter)
+        .sort({ createdAt: -1 })
+        .limit(limit)
+        .lean();
+
+      return {
+        count: orders.length,
+        orders: orders.map((o) => ({
+          id: o._id,
+          customer: o.userId?.name ?? "Unknown",
+          email: o.userId?.email ?? null,
+          status: o.status,
+          isPaid: o.isPaid,
+          totalPrice: o.totalprice,
+          itemCount: o.orderItem?.length ?? 0,
+          address: `${o.address?.state}, ${o.address?.street}`,
+          createdAt: o.createdAt,
+        })),
+      };
+    }
+
+    case "update_order_status": {
+      const validStatuses = [
+        "pending",
+        "processing",
+        "shipped",
+        "delivered",
+        "cancelled",
+      ];
+
+      if (!validStatuses.includes(toolInput.status)) {
+        return { error: `Invalid status "${toolInput.status}"` };
+      }
+
+      const updated = await orderModel
+        .findByIdAndUpdate(
+          toolInput.orderId,
+          { status: toolInput.status },
+          { new: true },
+        )
+        .lean();
+
+      if (!updated) {
+        return { error: `Order ${toolInput.orderId} not found` };
+      }
+
+      return {
+        success: true,
+        orderId: updated._id,
+        customer: updated.userId?.name ?? "Unknown",
+        newStatus: updated.status,
+      };
+    }
+
+    case "get_user_info": {
+      const filter = {};
+
+      if (toolInput.userId) {
+        filter._id = toolInput.userId;
+      } else if (toolInput.email) {
+        filter.email = { $regex: `^${toolInput.email}$`, $options: "i" };
+      } else if (toolInput.name) {
+        filter.name = { $regex: toolInput.name, $options: "i" };
+      } else {
+        return { error: "Provide userId, email, or name to look up a user" };
+      }
+
+      const user = await userModel
+        .findOne(filter)
+        .select("-password -paymentData")
+        .lean();
+
+      if (!user) {
+        return { error: "User not found" };
+      }
+
+      // Get recent orders for this user
+      const orders = await orderModel
+        .find({ userId: user._id })
+        .sort({ createdAt: -1 })
+        .limit(5)
+        .lean();
+
+      return {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        phone: user.phone,
+        role: user.role,
+        active: user.active,
+        address: user.adress,
+        balance: user.balance,
+        withdrawableBalance: user.withdrawableBalance,
+        memberSince: user.createdAt,
+        recentOrders: orders.map((o) => ({
+          id: o._id,
+          status: o.status,
+          isPaid: o.isPaid,
+          totalPrice: o.totalprice,
+          createdAt: o.createdAt,
+        })),
+      };
     }
 
     default:

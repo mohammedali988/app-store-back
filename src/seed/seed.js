@@ -123,7 +123,6 @@ async function seedProducts(categories) {
   return results;
 }
 
-// ── 4. Seed Orders ────────────────────────────────────────────────────────────
 async function seedOrders(users, products) {
   console.log("🌱 Seeding orders...");
 
@@ -151,6 +150,22 @@ async function seedOrders(users, products) {
     { state: "Bethlehem", street: "Manger St", description: "Near the church" },
   ];
 
+  // Weighted statuses — realistic distribution for testing admin queries
+  const statusPool = [
+    "pending",
+    "pending",
+    "processing",
+    "processing",
+    "shipped",
+    "shipped",
+    "delivered",
+    "delivered",
+    "delivered",
+    "delivered",
+    "delivered",
+    "cancelled",
+  ];
+
   const createdOrders = [];
 
   // Create 2–4 orders per user
@@ -175,13 +190,21 @@ async function seedOrders(users, products) {
         return sum + discounted * orderItems[idx].count;
       }, 0);
 
+      const status = randomFrom(statusPool);
+      // isPaid is true unless the order is still pending or got cancelled
+      const isPaid =
+        status !== "pending" && status !== "cancelled"
+          ? true
+          : Math.random() > 0.5;
+
       const order = await orderModel.create({
         userId: user._id,
         orderItem: orderItems,
         totalAmount,
         totalprice: Math.round(totalprice * 100) / 100,
         address: randomFrom(addresses),
-        isPaid: Math.random() > 0.3, // 70% paid
+        isPaid,
+        status, // ← NEW
       });
 
       createdOrders.push(order);
