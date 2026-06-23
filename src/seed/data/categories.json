@@ -1,65 +1,496 @@
 [
   {
     "name": "Electronics",
-    "subCategories": ["Phones", "Laptops", "Headphones", "Cameras", "Tablets"],
+    "subCategories": [
+      "Phones",
+      "Laptops",
+      "Headphones",
+      "Cameras",
+      "Tablets",
+      "Smart Watches",
+      "Gaming",
+      "Accessories"
+    ],
     "attributes": [
-      { "name": "brand", "label": "Brand", "type": "text", "required": true, "options": [], "unit": "", "hint": "e.g. Samsung, Apple" },
-      { "name": "warranty", "label": "Warranty", "type": "number", "required": false, "options": [], "unit": "years", "hint": "" },
-      { "name": "condition", "label": "Condition", "type": "select", "required": true, "options": ["New", "Refurbished", "Used"], "unit": "", "hint": "" },
-      { "name": "color", "label": "Color", "type": "multiselect", "required": false, "options": ["Black", "White", "Silver", "Gold", "Blue"], "unit": "", "hint": "" },
-      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Electronics are counted in units" }
+      {
+        "name": "brand",
+        "label": "Brand",
+        "type": "text",
+        "required": true,
+        "options": [],
+        "unit": "",
+        "hint": "e.g. Samsung, Apple"
+      },
+      {
+        "name": "warranty",
+        "label": "Warranty",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "years",
+        "hint": ""
+      },
+      {
+        "name": "condition",
+        "label": "Condition",
+        "type": "select",
+        "required": true,
+        "options": ["New", "Refurbished", "Used"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "color",
+        "label": "Color",
+        "type": "multiselect",
+        "required": false,
+        "options": [
+          "Black",
+          "White",
+          "Silver",
+          "Gold",
+          "Blue",
+          "Red",
+          "Green",
+          "Purple"
+        ],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units"],
+        "unit": "",
+        "hint": "Electronics are counted in units"
+      }
     ]
   },
   {
     "name": "Clothing",
-    "subCategories": ["Men", "Women", "Kids", "Sports", "Accessories"],
+    "subCategories": [
+      "Men",
+      "Women",
+      "Kids",
+      "Sports Wear",
+      "Accessories",
+      "Shoes",
+      "Formal Wear"
+    ],
     "attributes": [
-      { "name": "size", "label": "Size", "type": "multiselect", "required": true, "options": ["XS", "S", "M", "L", "XL", "XXL"], "unit": "", "hint": "" },
-      { "name": "material", "label": "Material", "type": "text", "required": false, "options": [], "unit": "", "hint": "" },
-      { "name": "color", "label": "Color", "type": "multiselect", "required": true, "options": ["Black", "White", "Red", "Blue", "Green", "Yellow"], "unit": "", "hint": "" },
-      { "name": "gender", "label": "Gender", "type": "select", "required": true, "options": ["Male", "Female", "Unisex"], "unit": "", "hint": "" },
-      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Clothing is counted in units" }
+      {
+        "name": "size",
+        "label": "Size",
+        "type": "multiselect",
+        "required": true,
+        "options": ["XS", "S", "M", "L", "XL", "XXL", "3XL"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "material",
+        "label": "Material",
+        "type": "text",
+        "required": false,
+        "options": [],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "color",
+        "label": "Color",
+        "type": "multiselect",
+        "required": true,
+        "options": [
+          "Black",
+          "White",
+          "Red",
+          "Blue",
+          "Green",
+          "Yellow",
+          "Pink",
+          "Gray",
+          "Navy",
+          "Beige"
+        ],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "gender",
+        "label": "Gender",
+        "type": "select",
+        "required": true,
+        "options": ["Male", "Female", "Unisex"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units"],
+        "unit": "",
+        "hint": "Clothing is counted in units"
+      }
     ]
   },
   {
     "name": "Grocery",
-    "subCategories": ["Vegetables", "Fruits", "Dairy", "Meat", "Bakery"],
+    "subCategories": [
+      "Vegetables",
+      "Fruits",
+      "Dairy",
+      "Meat",
+      "Bakery",
+      "Beverages",
+      "Snacks",
+      "Pantry"
+    ],
     "attributes": [
-      { "name": "origin", "label": "Origin", "type": "text", "required": false, "options": [], "unit": "", "hint": "e.g. Local, Imported" },
-      { "name": "organic", "label": "Organic", "type": "select", "required": false, "options": ["Yes", "No"], "unit": "", "hint": "" },
-      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["kg", "g", "liters", "ml", "units"], "unit": "", "hint": "Choose the unit that matches this product" }
+      {
+        "name": "origin",
+        "label": "Origin",
+        "type": "text",
+        "required": false,
+        "options": [],
+        "unit": "",
+        "hint": "e.g. Local, Imported"
+      },
+      {
+        "name": "organic",
+        "label": "Organic",
+        "type": "select",
+        "required": false,
+        "options": ["Yes", "No"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "expiryDays",
+        "label": "Shelf Life",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "days",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["kg", "g", "liters", "ml", "units", "packs"],
+        "unit": "",
+        "hint": "Choose the unit that matches this product"
+      }
     ]
   },
   {
     "name": "Furniture",
-    "subCategories": ["Living Room", "Bedroom", "Office", "Kitchen", "Outdoor"],
+    "subCategories": [
+      "Living Room",
+      "Bedroom",
+      "Office",
+      "Kitchen",
+      "Outdoor",
+      "Storage",
+      "Dining"
+    ],
     "attributes": [
-      { "name": "material", "label": "Material", "type": "select", "required": true, "options": ["Wood", "Metal", "Plastic", "Glass", "Fabric"], "unit": "", "hint": "" },
-      { "name": "weight", "label": "Weight", "type": "number", "required": false, "options": [], "unit": "kg", "hint": "" },
-      { "name": "dimensions", "label": "Dimensions", "type": "text", "required": false, "options": [], "unit": "cm", "hint": "W x H x D" },
-      { "name": "color", "label": "Color", "type": "select", "required": false, "options": ["Brown", "Black", "White", "Gray", "Natural"], "unit": "", "hint": "" },
-      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Furniture is counted in units" }
+      {
+        "name": "material",
+        "label": "Material",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Wood",
+          "Metal",
+          "Plastic",
+          "Glass",
+          "Fabric",
+          "Leather",
+          "Marble"
+        ],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "weight",
+        "label": "Weight",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "kg",
+        "hint": ""
+      },
+      {
+        "name": "dimensions",
+        "label": "Dimensions",
+        "type": "text",
+        "required": false,
+        "options": [],
+        "unit": "cm",
+        "hint": "W x H x D"
+      },
+      {
+        "name": "color",
+        "label": "Color",
+        "type": "select",
+        "required": false,
+        "options": [
+          "Brown",
+          "Black",
+          "White",
+          "Gray",
+          "Natural",
+          "Beige",
+          "Walnut",
+          "Oak"
+        ],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units"],
+        "unit": "",
+        "hint": "Furniture is counted in units"
+      }
     ]
   },
   {
     "name": "Sports",
-    "subCategories": ["Fitness", "Football", "Basketball", "Running", "Swimming"],
+    "subCategories": [
+      "Fitness",
+      "Football",
+      "Basketball",
+      "Running",
+      "Swimming",
+      "Cycling",
+      "Tennis",
+      "Camping"
+    ],
     "attributes": [
-      { "name": "brand", "label": "Brand", "type": "text", "required": true, "options": [], "unit": "", "hint": "" },
-      { "name": "size", "label": "Size", "type": "select", "required": false, "options": ["XS", "S", "M", "L", "XL"], "unit": "", "hint": "" },
-      { "name": "weight", "label": "Weight", "type": "number", "required": false, "options": [], "unit": "kg", "hint": "" },
-      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units", "kg"], "unit": "", "hint": "" }
+      {
+        "name": "brand",
+        "label": "Brand",
+        "type": "text",
+        "required": true,
+        "options": [],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "size",
+        "label": "Size",
+        "type": "select",
+        "required": false,
+        "options": ["XS", "S", "M", "L", "XL", "One Size"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "weight",
+        "label": "Weight",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "kg",
+        "hint": ""
+      },
+      {
+        "name": "skillLevel",
+        "label": "Skill Level",
+        "type": "select",
+        "required": false,
+        "options": ["Beginner", "Intermediate", "Advanced", "Professional"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units", "kg"],
+        "unit": "",
+        "hint": ""
+      }
     ]
   },
   {
     "name": "Books",
-    "subCategories": ["Fiction", "Non-Fiction", "Science", "History", "Self-Help"],
+    "subCategories": [
+      "Fiction",
+      "Non-Fiction",
+      "Science",
+      "History",
+      "Self-Help",
+      "Business",
+      "Children",
+      "Education"
+    ],
     "attributes": [
-      { "name": "author", "label": "Author", "type": "text", "required": true, "options": [], "unit": "", "hint": "" },
-      { "name": "language", "label": "Language", "type": "select", "required": true, "options": ["English", "Arabic", "French", "Spanish"], "unit": "", "hint": "" },
-      { "name": "pages", "label": "Pages", "type": "number", "required": false, "options": [], "unit": "pages", "hint": "" },
-      { "name": "publisher", "label": "Publisher", "type": "text", "required": false, "options": [], "unit": "", "hint": "" },
-      { "name": "stockUnit", "label": "Stock Unit", "type": "select", "required": true, "options": ["units"], "unit": "", "hint": "Books are counted in units" }
+      {
+        "name": "author",
+        "label": "Author",
+        "type": "text",
+        "required": true,
+        "options": [],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "language",
+        "label": "Language",
+        "type": "select",
+        "required": true,
+        "options": ["English", "Arabic", "French", "Spanish", "German"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "pages",
+        "label": "Pages",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "pages",
+        "hint": ""
+      },
+      {
+        "name": "publisher",
+        "label": "Publisher",
+        "type": "text",
+        "required": false,
+        "options": [],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units"],
+        "unit": "",
+        "hint": "Books are counted in units"
+      }
+    ]
+  },
+  {
+    "name": "Home & Kitchen",
+    "subCategories": [
+      "Cookware",
+      "Appliances",
+      "Decor",
+      "Bedding",
+      "Bathroom",
+      "Cleaning",
+      "Lighting"
+    ],
+    "attributes": [
+      {
+        "name": "material",
+        "label": "Material",
+        "type": "text",
+        "required": false,
+        "options": [],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "color",
+        "label": "Color",
+        "type": "select",
+        "required": false,
+        "options": [
+          "White",
+          "Black",
+          "Silver",
+          "Red",
+          "Blue",
+          "Green",
+          "Beige",
+          "Transparent"
+        ],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "warranty",
+        "label": "Warranty",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "years",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units"],
+        "unit": "",
+        "hint": ""
+      }
+    ]
+  },
+  {
+    "name": "Beauty & Health",
+    "subCategories": [
+      "Skincare",
+      "Makeup",
+      "Hair Care",
+      "Fragrances",
+      "Vitamins",
+      "Personal Care"
+    ],
+    "attributes": [
+      {
+        "name": "brand",
+        "label": "Brand",
+        "type": "text",
+        "required": true,
+        "options": [],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "skinType",
+        "label": "Skin Type",
+        "type": "select",
+        "required": false,
+        "options": ["All", "Dry", "Oily", "Sensitive", "Combination"],
+        "unit": "",
+        "hint": ""
+      },
+      {
+        "name": "volume",
+        "label": "Volume",
+        "type": "number",
+        "required": false,
+        "options": [],
+        "unit": "ml",
+        "hint": ""
+      },
+      {
+        "name": "stockUnit",
+        "label": "Stock Unit",
+        "type": "select",
+        "required": true,
+        "options": ["units", "ml"],
+        "unit": "",
+        "hint": ""
+      }
     ]
   }
 ]

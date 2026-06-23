@@ -1,353 +1,1633 @@
 [
   {
-    "productName": "Samsung Galaxy S24",
-    "description": "Latest Samsung flagship smartphone with 6.2-inch Dynamic AMOLED display, 50MP camera system, and Snapdragon 8 Gen 3 processor for ultimate performance.",
+    "productName": "Samsung Galaxy S24 Ultra",
+    "description": "Flagship smartphone with 6.8-inch Dynamic AMOLED 2X display, 200MP camera, S Pen support, and Snapdragon 8 Gen 3 processor. Titanium frame with 5000mAh battery.",
+    "price": 1299,
+    "discount": 8,
+    "category": "Electronics",
+    "subCategory": "Phones",
+    "availability": true,
+    "stock": {
+      "value": 35,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-s24.jpg",
+        "fileId": "seed_s24_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Samsung",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["Black", "Silver", "Gold"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Apple iPhone 15 Pro Max",
+    "description": "Premium iPhone with titanium design, A17 Pro chip, 48MP main camera with 5x optical zoom, and USB-C. The ultimate iPhone for professionals and creators.",
+    "price": 1399,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Phones",
+    "availability": true,
+    "stock": {
+      "value": 28,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-iphone15pm.jpg",
+        "fileId": "seed_15pm_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Apple",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "White", "Blue"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Google Pixel 8 Pro",
+    "description": "AI-powered smartphone with Tensor G3 chip, 50MP triple camera system, Magic Editor, and 7 years of OS updates. Best camera phone for photography enthusiasts.",
+    "price": 999,
+    "discount": 12,
+    "category": "Electronics",
+    "subCategory": "Phones",
+    "availability": true,
+    "stock": {
+      "value": 22,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-pixel8.jpg",
+        "fileId": "seed_pixel8_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Google",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "White", "Blue"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "OnePlus 12",
+    "description": "Flagship killer with Snapdragon 8 Gen 3, 120Hz LTPO display, 50MP Hasselblad camera, and 100W fast charging. Premium performance at competitive pricing.",
     "price": 899,
     "discount": 5,
     "category": "Electronics",
     "subCategory": "Phones",
     "availability": true,
-    "stock": { "value": 45, "unit": "units", "lowStockThreshold": 5 },
+    "stock": {
+      "value": 30,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-phone-1.jpg", "fileId": "seed_phone_001" },
-      { "filePath": "/seed/electronics-phone-1b.jpg", "fileId": "seed_phone_001b" }
+      {
+        "filePath": "/seed/electronics-oneplus12.jpg",
+        "fileId": "seed_op12_001"
+      }
     ],
-    "attributes": { "brand": "Samsung", "warranty": 2, "condition": "New", "color": ["Black", "Silver"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "OnePlus",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "Green"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Apple iPhone 15 Pro",
-    "description": "Apple iPhone 15 Pro with titanium design, A17 Pro chip, 48MP main camera, and USB-C connectivity. The most powerful iPhone ever made for professionals.",
-    "price": 1199,
+    "productName": "MacBook Pro 16-inch M3 Max",
+    "description": "Ultimate pro laptop with M3 Max chip, 16-inch Liquid Retina XDR display, 36GB unified memory, and up to 22 hours battery life for demanding workflows.",
+    "price": 3499,
     "discount": 0,
     "category": "Electronics",
-    "subCategory": "Phones",
+    "subCategory": "Laptops",
     "availability": true,
-    "stock": { "value": 30, "unit": "units", "lowStockThreshold": 5 },
+    "stock": {
+      "value": 12,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-phone-2.jpg", "fileId": "seed_phone_002" }
+      {
+        "filePath": "/seed/electronics-mbp16.jpg",
+        "fileId": "seed_mbp16_001"
+      }
     ],
-    "attributes": { "brand": "Apple", "warranty": 1, "condition": "New", "color": ["Black", "White", "Gold"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "Apple",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Silver", "Space Gray"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Sony WH-1000XM5 Headphones",
-    "description": "Industry-leading noise canceling wireless headphones with 30-hour battery life, multipoint connection, and crystal-clear hands-free calling in any situation.",
-    "price": 349,
+    "productName": "Dell XPS 15 OLED",
+    "description": "Premium creator laptop with Intel Core i9, RTX 4060, 15.6-inch 3.5K OLED touch display, and precision CNC aluminum chassis for creative professionals.",
+    "price": 2199,
+    "discount": 10,
+    "category": "Electronics",
+    "subCategory": "Laptops",
+    "availability": true,
+    "stock": {
+      "value": 15,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-xps15.jpg",
+        "fileId": "seed_xps15_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Dell",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["Silver", "Black"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Lenovo ThinkPad X1 Carbon",
+    "description": "Business ultrabook with Intel Core i7, 14-inch 2.8K OLED, legendary ThinkPad keyboard, and military-grade durability. The ultimate productivity machine.",
+    "price": 1899,
+    "discount": 8,
+    "category": "Electronics",
+    "subCategory": "Laptops",
+    "availability": true,
+    "stock": {
+      "value": 18,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-thinkpad.jpg",
+        "fileId": "seed_tp_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Lenovo",
+      "warranty": 3,
+      "condition": "New",
+      "color": ["Black"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "ASUS ROG Zephyrus G14",
+    "description": "Compact gaming powerhouse with AMD Ryzen 9, RTX 4070, 14-inch 165Hz display, and AniMe Matrix LED lid. Portable gaming without compromise.",
+    "price": 1799,
+    "discount": 5,
+    "category": "Electronics",
+    "subCategory": "Laptops",
+    "availability": true,
+    "stock": {
+      "value": 14,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-g14.jpg",
+        "fileId": "seed_g14_001"
+      }
+    ],
+    "attributes": {
+      "brand": "ASUS",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["White", "Black"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Sony WH-1000XM5",
+    "description": "Industry-leading noise canceling headphones with 8 microphones, 30-hour battery, multipoint connection, and crystal-clear hands-free calling.",
+    "price": 399,
     "discount": 10,
     "category": "Electronics",
     "subCategory": "Headphones",
     "availability": true,
-    "stock": { "value": 4, "unit": "units", "lowStockThreshold": 5 },
+    "stock": {
+      "value": 40,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-headphones-1.jpg", "fileId": "seed_head_001" }
+      {
+        "filePath": "/seed/electronics-xm5.jpg",
+        "fileId": "seed_xm5_001"
+      }
     ],
-    "attributes": { "brand": "Sony", "warranty": 1, "condition": "New", "color": ["Black", "Silver"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "Sony",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "Silver"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "MacBook Pro 14-inch M3",
-    "description": "MacBook Pro with M3 chip delivers exceptional performance for professionals. Features a stunning Liquid Retina XDR display and up to 22 hours of battery life.",
-    "price": 1999,
+    "productName": "AirPods Pro 2nd Gen",
+    "description": "Apple's premium wireless earbuds with H2 chip, Adaptive Audio, Personalized Volume, and up to 6 hours listening time with Active Noise Cancellation.",
+    "price": 249,
     "discount": 0,
     "category": "Electronics",
-    "subCategory": "Laptops",
+    "subCategory": "Headphones",
     "availability": true,
-    "stock": { "value": 15, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 55,
+      "unit": "units",
+      "lowStockThreshold": 10
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-laptop-1.jpg", "fileId": "seed_laptop_001" }
+      {
+        "filePath": "/seed/electronics-airpods.jpg",
+        "fileId": "seed_ap_001"
+      }
     ],
-    "attributes": { "brand": "Apple", "warranty": 1, "condition": "New", "color": ["Silver"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "Apple",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["White"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Dell XPS 15",
-    "description": "Premium Dell XPS 15 laptop with Intel Core i7 processor, 16GB RAM, 512GB SSD, and a gorgeous 15.6-inch OLED touch display for creative professionals.",
-    "price": 1499,
-    "discount": 8,
+    "productName": "Samsung Galaxy Watch 6",
+    "description": "Advanced health monitoring smartwatch with body composition analysis, sleep coaching, and 44mm Super AMOLED display. Your wellness companion.",
+    "price": 329,
+    "discount": 15,
     "category": "Electronics",
-    "subCategory": "Laptops",
+    "subCategory": "Smart Watches",
     "availability": true,
-    "stock": { "value": 20, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 25,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-laptop-2.jpg", "fileId": "seed_laptop_002" }
+      {
+        "filePath": "/seed/electronics-gw6.jpg",
+        "fileId": "seed_gw6_001"
+      }
     ],
-    "attributes": { "brand": "Dell", "warranty": 2, "condition": "New", "color": ["Silver", "Black"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "Samsung",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "Silver", "Gold"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "iPad Air 5th Generation",
-    "description": "Powerful iPad Air with M1 chip, 10.9-inch Liquid Retina display, 5G capability, and support for Apple Pencil and Magic Keyboard for versatile productivity.",
-    "price": 749,
-    "discount": 5,
+    "productName": "Apple Watch Series 9",
+    "description": "Smartwatch with S9 SiP chip, double tap gesture, brighter display, and advanced health sensors including ECG and blood oxygen monitoring.",
+    "price": 429,
+    "discount": 0,
     "category": "Electronics",
-    "subCategory": "Tablets",
+    "subCategory": "Smart Watches",
     "availability": true,
-    "stock": { "value": 25, "unit": "units", "lowStockThreshold": 5 },
+    "stock": {
+      "value": 30,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-tablet-1.jpg", "fileId": "seed_tablet_001" }
+      {
+        "filePath": "/seed/electronics-aw9.jpg",
+        "fileId": "seed_aw9_001"
+      }
     ],
-    "attributes": { "brand": "Apple", "warranty": 1, "condition": "New", "color": ["Blue", "Silver", "Gold"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "Apple",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "White", "Red"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Canon EOS R50 Camera",
-    "description": "Compact mirrorless camera with 24.2MP APS-C sensor, 4K video recording, fast autofocus with subject tracking, and Wi-Fi connectivity for content creators.",
-    "price": 679,
+    "productName": "Canon EOS R6 Mark II",
+    "description": "Professional mirrorless camera with 24.2MP full-frame sensor, 40fps continuous shooting, 4K 60p video, and advanced autofocus with subject detection.",
+    "price": 2499,
     "discount": 0,
     "category": "Electronics",
     "subCategory": "Cameras",
     "availability": true,
-    "stock": { "value": 3, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 8,
+      "unit": "units",
+      "lowStockThreshold": 2
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-camera-1.jpg", "fileId": "seed_cam_001" }
+      {
+        "filePath": "/seed/electronics-r6.jpg",
+        "fileId": "seed_r6_001"
+      }
     ],
-    "attributes": { "brand": "Canon", "warranty": 1, "condition": "New", "color": ["Black", "White"], "stockUnit": "units" }
+    "attributes": {
+      "brand": "Canon",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["Black"],
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Men's Classic Slim Fit Jeans",
-    "description": "Premium quality slim fit jeans for men made from 98% cotton and 2% elastane. Comfortable stretch fabric that moves with you throughout the day.",
-    "price": 59,
+    "productName": "Sony A7 IV",
+    "description": "Versatile hybrid camera with 33MP sensor, 4K 60p 10-bit video, real-time eye AF, and 5-axis in-body stabilization for photo and video creators.",
+    "price": 2499,
+    "discount": 5,
+    "category": "Electronics",
+    "subCategory": "Cameras",
+    "availability": true,
+    "stock": {
+      "value": 10,
+      "unit": "units",
+      "lowStockThreshold": 2
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-a7iv.jpg",
+        "fileId": "seed_a7iv_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Sony",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["Black"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "iPad Pro 12.9 M2",
+    "description": "Professional tablet with M2 chip, 12.9-inch Liquid Retina XDR display, ProMotion technology, and support for Apple Pencil hover for creative workflows.",
+    "price": 1099,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Tablets",
+    "availability": true,
+    "stock": {
+      "value": 20,
+      "unit": "units",
+      "lowStockThreshold": 4
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-ipadpro.jpg",
+        "fileId": "seed_ipadpro_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Apple",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Silver", "Space Gray"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Samsung Galaxy Tab S9 Ultra",
+    "description": "Massive 14.6-inch AMOLED tablet with Snapdragon 8 Gen 2, S Pen included, IP68 water resistance, and DeX mode for desktop-like productivity.",
+    "price": 1199,
+    "discount": 8,
+    "category": "Electronics",
+    "subCategory": "Tablets",
+    "availability": true,
+    "stock": {
+      "value": 16,
+      "unit": "units",
+      "lowStockThreshold": 4
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-tabs9.jpg",
+        "fileId": "seed_tabs9_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Samsung",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black", "Beige"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "PlayStation 5 Console",
+    "description": "Next-gen gaming console with ultra-high speed SSD, ray tracing, 4K 120Hz gaming, and haptic feedback DualSense controller. Includes Astro's Playroom.",
+    "price": 499,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "availability": true,
+    "stock": {
+      "value": 12,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-ps5.jpg",
+        "fileId": "seed_ps5_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Sony",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["White"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Xbox Series X",
+    "description": "Most powerful Xbox ever with 12 teraflops GPU, 1TB SSD, 4K 120fps gaming, Quick Resume, and backward compatibility with thousands of games.",
+    "price": 499,
+    "discount": 5,
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "availability": true,
+    "stock": {
+      "value": 15,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-xbox.jpg",
+        "fileId": "seed_xbox_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Microsoft",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["Black"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Nintendo Switch OLED",
+    "description": "Handheld console with vibrant 7-inch OLED screen, enhanced audio, 64GB storage, and detachable Joy-Con controllers for versatile gaming anywhere.",
+    "price": 349,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "availability": true,
+    "stock": {
+      "value": 25,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-switch.jpg",
+        "fileId": "seed_switch_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Nintendo",
+      "warranty": 1,
+      "condition": "New",
+      "color": ["White", "Red"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Anker 737 Power Bank 24000mAh",
+    "description": "High-capacity power bank with 140W output, smart digital display, and 3-port design. Charges laptops, phones, and tablets simultaneously at full speed.",
+    "price": 149,
+    "discount": 12,
+    "category": "Electronics",
+    "subCategory": "Accessories",
+    "availability": true,
+    "stock": {
+      "value": 60,
+      "unit": "units",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-anker.jpg",
+        "fileId": "seed_anker_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Anker",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["Black", "Silver"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Logitech MX Master 3S",
+    "description": "Premium wireless mouse with 8000 DPI sensor, MagSpeed electromagnetic scrolling, and ergonomic design. Works on any surface including glass.",
+    "price": 99,
+    "discount": 0,
+    "category": "Electronics",
+    "subCategory": "Accessories",
+    "availability": true,
+    "stock": {
+      "value": 45,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/electronics-mx3s.jpg",
+        "fileId": "seed_mx3s_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Logitech",
+      "warranty": 2,
+      "condition": "New",
+      "color": ["Black", "Gray"],
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Nike Air Force 1 '07",
+    "description": "Iconic basketball-inspired sneakers with premium leather upper, Nike Air cushioning, and timeless design. The perfect everyday shoe for any style.",
+    "price": 110,
+    "discount": 0,
+    "category": "Clothing",
+    "subCategory": "Shoes",
+    "availability": true,
+    "stock": {
+      "value": 70,
+      "unit": "units",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/clothing-af1.jpg",
+        "fileId": "seed_af1_001"
+      }
+    ],
+    "attributes": {
+      "size": ["S", "M", "L", "XL"],
+      "material": "Leather",
+      "color": ["White", "Black"],
+      "gender": "Unisex",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Adidas Ultraboost Light",
+    "description": "Revolutionary running shoes with Light BOOST technology, 30% lighter than previous versions, Primeknit upper, and Continental rubber outsole.",
+    "price": 190,
     "discount": 15,
+    "category": "Clothing",
+    "subCategory": "Shoes",
+    "availability": true,
+    "stock": {
+      "value": 50,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/clothing-ultraboost.jpg",
+        "fileId": "seed_ub_001"
+      }
+    ],
+    "attributes": {
+      "size": ["S", "M", "L", "XL"],
+      "material": "Primeknit",
+      "color": ["Black", "White", "Blue"],
+      "gender": "Unisex",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Levi's 501 Original Fit Jeans",
+    "description": "Classic straight-leg jeans with button fly, iconic leather patch, and durable denim construction. The original blue jean since 1873.",
+    "price": 89,
+    "discount": 20,
     "category": "Clothing",
     "subCategory": "Men",
     "availability": true,
-    "stock": { "value": 80, "unit": "units", "lowStockThreshold": 10 },
+    "stock": {
+      "value": 85,
+      "unit": "units",
+      "lowStockThreshold": 12
+    },
     "productImages": [
-      { "filePath": "/seed/clothing-jeans-1.jpg", "fileId": "seed_cloth_001" }
+      {
+        "filePath": "/seed/clothing-501.jpg",
+        "fileId": "seed_501_001"
+      }
     ],
-    "attributes": { "size": ["S", "M", "L", "XL"], "material": "Cotton", "color": ["Black", "Blue"], "gender": "Male", "stockUnit": "units" }
+    "attributes": {
+      "size": ["28", "30", "32", "34", "36", "38"],
+      "material": "Denim",
+      "color": ["Blue", "Black", "Gray"],
+      "gender": "Male",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Women's Floral Summer Dress",
-    "description": "Beautiful floral print summer dress with a flattering A-line silhouette. Made from lightweight breathable fabric, perfect for warm weather and casual occasions.",
-    "price": 45,
-    "discount": 20,
+    "productName": "Zara Oversized Blazer",
+    "description": "Trendy oversized blazer with structured shoulders, single-breasted closure, and versatile styling options for work or casual wear.",
+    "price": 79,
+    "discount": 0,
     "category": "Clothing",
     "subCategory": "Women",
     "availability": true,
-    "stock": { "value": 60, "unit": "units", "lowStockThreshold": 10 },
+    "stock": {
+      "value": 40,
+      "unit": "units",
+      "lowStockThreshold": 6
+    },
     "productImages": [
-      { "filePath": "/seed/clothing-dress-1.jpg", "fileId": "seed_cloth_002" }
+      {
+        "filePath": "/seed/clothing-blazer.jpg",
+        "fileId": "seed_blazer_001"
+      }
     ],
-    "attributes": { "size": ["XS", "S", "M", "L"], "material": "Polyester", "color": ["Red", "Blue", "Yellow"], "gender": "Female", "stockUnit": "units" }
+    "attributes": {
+      "size": ["XS", "S", "M", "L", "XL"],
+      "material": "Polyester",
+      "color": ["Black", "Beige", "Navy"],
+      "gender": "Female",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Nike Air Max 270 Sneakers",
-    "description": "Nike Air Max 270 features the brand's largest Air unit yet for all-day comfort. Mesh upper provides breathability while the foam midsole delivers cushioned support.",
-    "price": 149,
-    "discount": 0,
-    "category": "Clothing",
-    "subCategory": "Sports",
-    "availability": true,
-    "stock": { "value": 7, "unit": "units", "lowStockThreshold": 8 },
-    "productImages": [
-      { "filePath": "/seed/clothing-shoes-1.jpg", "fileId": "seed_cloth_003" }
-    ],
-    "attributes": { "size": ["S", "M", "L", "XL"], "material": "Mesh", "color": ["Black", "White", "Red"], "gender": "Unisex", "stockUnit": "units" }
-  },
-  {
-    "productName": "Kids Cartoon Hoodie",
-    "description": "Cute and cozy hoodie for kids featuring popular cartoon characters. Made from soft 100% cotton fleece fabric, machine washable and durable for active children.",
-    "price": 29,
+    "productName": "Uniqlo Heattech Ultra Warm Turtleneck",
+    "description": "Innovative thermal turtleneck with bio-warming technology, moisture-wicking, and anti-microbial properties. Perfect for cold weather layering.",
+    "price": 39,
     "discount": 10,
     "category": "Clothing",
-    "subCategory": "Kids",
+    "subCategory": "Men",
     "availability": true,
-    "stock": { "value": 50, "unit": "units", "lowStockThreshold": 10 },
+    "stock": {
+      "value": 100,
+      "unit": "units",
+      "lowStockThreshold": 15
+    },
     "productImages": [
-      { "filePath": "/seed/clothing-kids-1.jpg", "fileId": "seed_cloth_004" }
+      {
+        "filePath": "/seed/clothing-heattech.jpg",
+        "fileId": "seed_ht_001"
+      }
     ],
-    "attributes": { "size": ["XS", "S", "M"], "material": "Cotton", "color": ["Blue", "Red", "Yellow"], "gender": "Unisex", "stockUnit": "units" }
+    "attributes": {
+      "size": ["S", "M", "L", "XL"],
+      "material": "Acrylic",
+      "color": ["Black", "Gray", "Navy"],
+      "gender": "Male",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Leather Bifold Wallet",
-    "description": "Handcrafted genuine leather bifold wallet with multiple card slots, cash compartment, and slim profile. RFID blocking technology protects your cards from skimming.",
-    "price": 39,
+    "productName": "Lululemon Align Leggings",
+    "description": "Buttery-soft Nulu fabric leggings with high-rise waist, 25-inch inseam, and weightless feel. Designed for yoga and everyday comfort.",
+    "price": 98,
+    "discount": 0,
+    "category": "Clothing",
+    "subCategory": "Women",
+    "availability": true,
+    "stock": {
+      "value": 65,
+      "unit": "units",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/clothing-align.jpg",
+        "fileId": "seed_align_001"
+      }
+    ],
+    "attributes": {
+      "size": ["XS", "S", "M", "L", "XL"],
+      "material": "Nylon",
+      "color": ["Black", "Navy", "Gray"],
+      "gender": "Female",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "North Face Resolve 2 Jacket",
+    "description": "Waterproof and breathable rain jacket with DryVent technology, adjustable hood, and mesh lining. Perfect for outdoor adventures and daily commutes.",
+    "price": 110,
+    "discount": 25,
+    "category": "Clothing",
+    "subCategory": "Sports Wear",
+    "availability": true,
+    "stock": {
+      "value": 45,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/clothing-resolve.jpg",
+        "fileId": "seed_resolve_001"
+      }
+    ],
+    "attributes": {
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "material": "Nylon",
+      "color": ["Black", "Blue", "Red"],
+      "gender": "Unisex",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Ray-Ban Aviator Classic",
+    "description": "Iconic aviator sunglasses with gold metal frame, G-15 green lenses, and 100% UV protection. Timeless style since 1937.",
+    "price": 185,
     "discount": 0,
     "category": "Clothing",
     "subCategory": "Accessories",
     "availability": true,
-    "stock": { "value": 4, "unit": "units", "lowStockThreshold": 5 },
+    "stock": {
+      "value": 35,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
     "productImages": [
-      { "filePath": "/seed/clothing-wallet-1.jpg", "fileId": "seed_cloth_005" }
+      {
+        "filePath": "/seed/clothing-aviator.jpg",
+        "fileId": "seed_av_001"
+      }
     ],
-    "attributes": { "size": ["M"], "material": "Leather", "color": ["Black", "Brown"], "gender": "Unisex", "stockUnit": "units" }
+    "attributes": {
+      "size": ["One Size"],
+      "material": "Metal",
+      "color": ["Gold", "Silver", "Black"],
+      "gender": "Unisex",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Modern L-Shaped Office Desk",
-    "description": "Spacious L-shaped office desk with two-tier design providing ample workspace. Made from engineered wood with steel legs, includes cable management holes.",
-    "price": 329,
-    "discount": 12,
-    "category": "Furniture",
-    "subCategory": "Office",
+    "productName": "Organic Fresh Strawberries 500g",
+    "description": "Sweet and juicy organic strawberries freshly picked from local farms. Perfect for smoothies, desserts, or healthy snacking. Rich in vitamin C and antioxidants.",
+    "price": 12,
+    "discount": 0,
+    "category": "Grocery",
+    "subCategory": "Fruits",
     "availability": true,
-    "stock": { "value": 12, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 200,
+      "unit": "kg",
+      "lowStockThreshold": 20
+    },
     "productImages": [
-      { "filePath": "/seed/furniture-desk-1.jpg", "fileId": "seed_furn_001" }
+      {
+        "filePath": "/seed/grocery-strawberries.jpg",
+        "fileId": "seed_straw_001"
+      }
     ],
-    "attributes": { "material": "Wood", "weight": 45, "dimensions": "150 x 75 x 60", "color": "Brown", "stockUnit": "units" }
+    "attributes": {
+      "origin": "Local",
+      "organic": "Yes",
+      "expiryDays": 5,
+      "stockUnit": "kg"
+    }
   },
   {
-    "productName": "Ergonomic Office Chair",
-    "description": "Premium ergonomic office chair with lumbar support, adjustable armrests, and breathable mesh back. Designed for long working hours with maximum comfort and posture support.",
-    "price": 249,
+    "productName": "Premium Basmati Rice 5kg",
+    "description": "Aged premium basmati rice with extra-long grains, aromatic fragrance, and fluffy texture when cooked. Sourced directly from the foothills of the Himalayas.",
+    "price": 24,
+    "discount": 5,
+    "category": "Grocery",
+    "subCategory": "Pantry",
+    "availability": true,
+    "stock": {
+      "value": 150,
+      "unit": "kg",
+      "lowStockThreshold": 15
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-basmati.jpg",
+        "fileId": "seed_rice_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Imported",
+      "organic": "No",
+      "expiryDays": 730,
+      "stockUnit": "kg"
+    }
+  },
+  {
+    "productName": "Extra Virgin Olive Oil 1L",
+    "description": "Cold-pressed extra virgin olive oil from Palestinian olive groves. Rich flavor with low acidity, perfect for salads, cooking, and dipping fresh bread.",
+    "price": 35,
+    "discount": 0,
+    "category": "Grocery",
+    "subCategory": "Pantry",
+    "availability": true,
+    "stock": {
+      "value": 80,
+      "unit": "liters",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-oliveoil.jpg",
+        "fileId": "seed_oil_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Local",
+      "organic": "Yes",
+      "expiryDays": 365,
+      "stockUnit": "liters"
+    }
+  },
+  {
+    "productName": "Fresh Whole Milk 1L",
+    "description": "Farm-fresh whole milk from grass-fed cows, pasteurized and homogenized. Rich in calcium and protein with a creamy, full-bodied taste.",
+    "price": 4,
+    "discount": 0,
+    "category": "Grocery",
+    "subCategory": "Dairy",
+    "availability": true,
+    "stock": {
+      "value": 300,
+      "unit": "liters",
+      "lowStockThreshold": 30
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-milk.jpg",
+        "fileId": "seed_milk_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Local",
+      "organic": "No",
+      "expiryDays": 7,
+      "stockUnit": "liters"
+    }
+  },
+  {
+    "productName": "Organic Chicken Breast 1kg",
+    "description": "Free-range organic chicken breast, hormone-free and antibiotic-free. Lean protein source perfect for grilling, baking, or stir-frying healthy meals.",
+    "price": 28,
+    "discount": 10,
+    "category": "Grocery",
+    "subCategory": "Meat",
+    "availability": true,
+    "stock": {
+      "value": 100,
+      "unit": "kg",
+      "lowStockThreshold": 12
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-chicken.jpg",
+        "fileId": "seed_chicken_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Local",
+      "organic": "Yes",
+      "expiryDays": 3,
+      "stockUnit": "kg"
+    }
+  },
+  {
+    "productName": "Artisan Sourdough Bread",
+    "description": "Handcrafted sourdough bread with crispy crust and chewy interior. Fermented for 24 hours using natural wild yeast for superior flavor and digestibility.",
+    "price": 8,
+    "discount": 0,
+    "category": "Grocery",
+    "subCategory": "Bakery",
+    "availability": true,
+    "stock": {
+      "value": 60,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-sourdough.jpg",
+        "fileId": "seed_bread_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Local",
+      "organic": "Yes",
+      "expiryDays": 3,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Mixed Nuts Premium 400g",
+    "description": "Premium blend of almonds, cashews, walnuts, and pistachios. Lightly roasted and salted for the perfect healthy snack rich in protein and healthy fats.",
+    "price": 22,
+    "discount": 8,
+    "category": "Grocery",
+    "subCategory": "Snacks",
+    "availability": true,
+    "stock": {
+      "value": 75,
+      "unit": "g",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-nuts.jpg",
+        "fileId": "seed_nuts_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Imported",
+      "organic": "No",
+      "expiryDays": 180,
+      "stockUnit": "g"
+    }
+  },
+  {
+    "productName": "Fresh Avocados 4-Pack",
+    "description": "Ripe Hass avocados with creamy texture and rich, nutty flavor. Perfect for guacamole, toast, or salads. Packed with healthy monounsaturated fats.",
+    "price": 15,
+    "discount": 0,
+    "category": "Grocery",
+    "subCategory": "Vegetables",
+    "availability": true,
+    "stock": {
+      "value": 120,
+      "unit": "units",
+      "lowStockThreshold": 15
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/grocery-avocado.jpg",
+        "fileId": "seed_avo_001"
+      }
+    ],
+    "attributes": {
+      "origin": "Imported",
+      "organic": "Yes",
+      "expiryDays": 7,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "IKEA KALLAX Shelf Unit",
+    "description": "Versatile 4x4 cube storage unit perfect for books, decor, and organization. Can be used vertically or horizontally as a room divider or TV stand.",
+    "price": 89,
+    "discount": 0,
+    "category": "Furniture",
+    "subCategory": "Storage",
+    "availability": true,
+    "stock": {
+      "value": 30,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/furniture-kallax.jpg",
+        "fileId": "seed_kallax_001"
+      }
+    ],
+    "attributes": {
+      "material": "Wood",
+      "weight": 25,
+      "dimensions": "147 x 147 x 39",
+      "color": "White",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Herman Miller Aeron Chair",
+    "description": "Revolutionary ergonomic office chair with Pellicle suspension, PostureFit SL lumbar support, and fully adjustable arms. The gold standard for office seating.",
+    "price": 1495,
     "discount": 0,
     "category": "Furniture",
     "subCategory": "Office",
     "availability": true,
-    "stock": { "value": 18, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 8,
+      "unit": "units",
+      "lowStockThreshold": 2
+    },
     "productImages": [
-      { "filePath": "/seed/furniture-chair-1.jpg", "fileId": "seed_furn_002" }
+      {
+        "filePath": "/seed/furniture-aeron.jpg",
+        "fileId": "seed_aeron_001"
+      }
     ],
-    "attributes": { "material": "Fabric", "weight": 15, "dimensions": "65 x 120 x 65", "color": "Black", "stockUnit": "units" }
+    "attributes": {
+      "material": "Metal",
+      "weight": 20,
+      "dimensions": "68 x 104 x 43",
+      "color": "Black",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "3-Seater Fabric Sofa",
-    "description": "Comfortable 3-seater sofa with high-density foam cushions and durable fabric upholstery. Modern design that fits perfectly in any living room with solid wood legs.",
-    "price": 699,
-    "discount": 8,
+    "productName": "West Elm Mid-Century Dining Table",
+    "description": "Stunning mid-century modern dining table with solid walnut legs and white lacquer top. Seats 6 comfortably and adds timeless elegance to any dining room.",
+    "price": 899,
+    "discount": 15,
     "category": "Furniture",
-    "subCategory": "Living Room",
+    "subCategory": "Dining",
     "availability": true,
-    "stock": { "value": 2, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 6,
+      "unit": "units",
+      "lowStockThreshold": 2
+    },
     "productImages": [
-      { "filePath": "/seed/furniture-sofa-1.jpg", "fileId": "seed_furn_003" }
+      {
+        "filePath": "/seed/furniture-dining.jpg",
+        "fileId": "seed_dining_001"
+      }
     ],
-    "attributes": { "material": "Fabric", "weight": 80, "dimensions": "210 x 85 x 90", "color": "Gray", "stockUnit": "units" }
+    "attributes": {
+      "material": "Wood",
+      "weight": 45,
+      "dimensions": "180 x 75 x 90",
+      "color": "Walnut",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Queen Size Bed Frame",
-    "description": "Elegant queen size bed frame with upholstered headboard, solid wooden slats, and under-bed storage drawers. Easy assembly with all hardware included.",
-    "price": 499,
-    "discount": 5,
+    "productName": "Casper Original Hybrid Mattress",
+    "description": "Premium hybrid mattress with AirScape perforated foam, responsive springs, and Zoned Support for perfect spinal alignment. 100-night risk-free trial included.",
+    "price": 1295,
+    "discount": 20,
     "category": "Furniture",
     "subCategory": "Bedroom",
     "availability": true,
-    "stock": { "value": 8, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 10,
+      "unit": "units",
+      "lowStockThreshold": 2
+    },
     "productImages": [
-      { "filePath": "/seed/furniture-bed-1.jpg", "fileId": "seed_furn_004" }
+      {
+        "filePath": "/seed/furniture-casper.jpg",
+        "fileId": "seed_casper_001"
+      }
     ],
-    "attributes": { "material": "Wood", "weight": 60, "dimensions": "160 x 200 x 110", "color": "Brown", "stockUnit": "units" }
+    "attributes": {
+      "material": "Fabric",
+      "weight": 55,
+      "dimensions": "152 x 203 x 28",
+      "color": "White",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Adjustable Dumbbell Set",
-    "description": "Versatile adjustable dumbbell set ranging from 5kg to 32kg per dumbbell. Quick-change weight system saves space and replaces 15 pairs of traditional dumbbells.",
-    "price": 299,
-    "discount": 0,
-    "category": "Sports",
-    "subCategory": "Fitness",
-    "availability": true,
-    "stock": { "value": 22, "unit": "units", "lowStockThreshold": 5 },
-    "productImages": [
-      { "filePath": "/seed/sports-dumbbell-1.jpg", "fileId": "seed_sport_001" }
-    ],
-    "attributes": { "brand": "PowerBlock", "size": "M", "weight": 32, "stockUnit": "units" }
-  },
-  {
-    "productName": "Adidas Running Shoes",
-    "description": "Lightweight Adidas running shoes with Boost cushioning technology for energy return. Breathable Primeknit upper and Continental rubber outsole for superior grip.",
-    "price": 129,
+    "productName": "Outdoor Patio Set 4-Piece",
+    "description": "Weather-resistant 4-piece patio set with powder-coated aluminum frame and quick-dry cushions. Includes sofa, two armchairs, and glass-top coffee table.",
+    "price": 799,
     "discount": 10,
-    "category": "Sports",
-    "subCategory": "Running",
+    "category": "Furniture",
+    "subCategory": "Outdoor",
     "availability": true,
-    "stock": { "value": 35, "unit": "units", "lowStockThreshold": 8 },
+    "stock": {
+      "value": 12,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
     "productImages": [
-      { "filePath": "/seed/sports-shoes-1.jpg", "fileId": "seed_sport_002" }
+      {
+        "filePath": "/seed/furniture-patio.jpg",
+        "fileId": "seed_patio_001"
+      }
     ],
-    "attributes": { "brand": "Adidas", "size": "L", "weight": 0.3, "stockUnit": "units" }
+    "attributes": {
+      "material": "Metal",
+      "weight": 35,
+      "dimensions": "200 x 80 x 75",
+      "color": "Gray",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Official Size Football",
-    "description": "FIFA-approved official size football made from premium synthetic leather. Features 32-panel design for consistent flight and precise control in all weather conditions.",
-    "price": 49,
+    "productName": "Peloton Bike+",
+    "description": "Immersive stationary bike with 24-inch HD touchscreen, auto-follow resistance, and thousands of live and on-demand classes. The ultimate home fitness experience.",
+    "price": 2495,
     "discount": 0,
-    "category": "Sports",
-    "subCategory": "Football",
-    "availability": true,
-    "stock": { "value": 60, "unit": "units", "lowStockThreshold": 10 },
-    "productImages": [
-      { "filePath": "/seed/sports-football-1.jpg", "fileId": "seed_sport_003" }
-    ],
-    "attributes": { "brand": "Nike", "size": "M", "weight": 0.45, "stockUnit": "units" }
-  },
-  {
-    "productName": "Yoga Mat Premium",
-    "description": "Extra thick 6mm non-slip yoga mat with alignment lines for proper positioning. Made from eco-friendly TPE material, includes carrying strap and free yoga guide.",
-    "price": 39,
-    "discount": 5,
     "category": "Sports",
     "subCategory": "Fitness",
     "availability": true,
-    "stock": { "value": 40, "unit": "units", "lowStockThreshold": 8 },
+    "stock": {
+      "value": 5,
+      "unit": "units",
+      "lowStockThreshold": 1
+    },
     "productImages": [
-      { "filePath": "/seed/sports-yoga-1.jpg", "fileId": "seed_sport_004" }
+      {
+        "filePath": "/seed/sports-peloton.jpg",
+        "fileId": "seed_peloton_001"
+      }
     ],
-    "attributes": { "brand": "Gaiam", "size": "L", "weight": 1.2, "stockUnit": "units" }
+    "attributes": {
+      "brand": "Peloton",
+      "size": "One Size",
+      "weight": 64,
+      "skillLevel": "Intermediate",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Atomic Habits - James Clear",
-    "description": "The #1 New York Times bestseller. Learn how tiny changes in behavior can lead to remarkable results. Over 10 million copies sold worldwide with proven strategies for building good habits.",
+    "productName": "Bowflex SelectTech 552 Dumbbells",
+    "description": "Revolutionary adjustable dumbbells replacing 15 sets of weights. Dial system adjusts from 5 to 52.5 lbs in 2.5 lb increments. Space-saving design for home gyms.",
+    "price": 429,
+    "discount": 15,
+    "category": "Sports",
+    "subCategory": "Fitness",
+    "availability": true,
+    "stock": {
+      "value": 18,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/sports-bowflex.jpg",
+        "fileId": "seed_bowflex_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Bowflex",
+      "size": "One Size",
+      "weight": 24,
+      "skillLevel": "Beginner",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Wilson Pro Staff RF97 Tennis Racket",
+    "description": "Professional tennis racket co-designed by Roger Federer with 97 sq inch head, 16x19 string pattern, and precise control for advanced players.",
+    "price": 279,
+    "discount": 0,
+    "category": "Sports",
+    "subCategory": "Tennis",
+    "availability": true,
+    "stock": {
+      "value": 15,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/sports-wilson.jpg",
+        "fileId": "seed_wilson_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Wilson",
+      "size": "L",
+      "weight": 0.34,
+      "skillLevel": "Advanced",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Trek Marlin 7 Mountain Bike",
+    "description": "Versatile hardtail mountain bike with RockShox fork, Shimano Deore 1x10 drivetrain, and hydraulic disc brakes. Perfect for trail riding and commuting.",
+    "price": 849,
+    "discount": 8,
+    "category": "Sports",
+    "subCategory": "Cycling",
+    "availability": true,
+    "stock": {
+      "value": 8,
+      "unit": "units",
+      "lowStockThreshold": 2
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/sports-trek.jpg",
+        "fileId": "seed_trek_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Trek",
+      "size": "L",
+      "weight": 13,
+      "skillLevel": "Intermediate",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Coleman 6-Person Camping Tent",
+    "description": "Spacious dome tent with WeatherTec system, welded floors, and inverted seams for waterproof protection. Sets up in 10 minutes with included carry bag.",
+    "price": 189,
+    "discount": 20,
+    "category": "Sports",
+    "subCategory": "Camping",
+    "availability": true,
+    "stock": {
+      "value": 20,
+      "unit": "units",
+      "lowStockThreshold": 4
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/sports-coleman.jpg",
+        "fileId": "seed_coleman_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Coleman",
+      "size": "One Size",
+      "weight": 8,
+      "skillLevel": "Beginner",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "The Psychology of Money",
+    "description": "Morgan Housel explores the strange ways people think about money and teaches you how to make better sense of one of life's most important topics through 19 short stories.",
+    "price": 24,
+    "discount": 0,
+    "category": "Books",
+    "subCategory": "Business",
+    "availability": true,
+    "stock": {
+      "value": 80,
+      "unit": "units",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/books-psychmoney.jpg",
+        "fileId": "seed_psych_001"
+      }
+    ],
+    "attributes": {
+      "author": "Morgan Housel",
+      "language": "English",
+      "pages": 252,
+      "publisher": "Harriman House",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Dune - Frank Herbert",
+    "description": "Epic science fiction masterpiece set on the desert planet Arrakis. Follow Paul Atreides as he navigates political intrigue, ecological mysteries, and destiny.",
     "price": 18,
-    "discount": 0,
+    "discount": 5,
     "category": "Books",
-    "subCategory": "Self-Help",
+    "subCategory": "Fiction",
     "availability": true,
-    "stock": { "value": 100, "unit": "units", "lowStockThreshold": 10 },
+    "stock": {
+      "value": 95,
+      "unit": "units",
+      "lowStockThreshold": 12
+    },
     "productImages": [
-      { "filePath": "/seed/books-atomic-habits.jpg", "fileId": "seed_book_001" }
+      {
+        "filePath": "/seed/books-dune.jpg",
+        "fileId": "seed_dune_001"
+      }
     ],
-    "attributes": { "author": "James Clear", "language": "English", "pages": 320, "publisher": "Avery", "stockUnit": "units" }
+    "attributes": {
+      "author": "Frank Herbert",
+      "language": "English",
+      "pages": 412,
+      "publisher": "Ace",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "Sapiens: A Brief History of Humankind",
-    "description": "A groundbreaking narrative of humanity's creation and evolution exploring how biology and history have defined us and enhanced our understanding of what it means to be human.",
-    "price": 22,
+    "productName": "Thinking, Fast and Slow",
+    "description": "Nobel laureate Daniel Kahneman reveals the two systems that drive our thinking: fast intuitive thinking and slow deliberate thinking. Transform your understanding of decision-making.",
+    "price": 20,
     "discount": 10,
     "category": "Books",
-    "subCategory": "History",
+    "subCategory": "Science",
     "availability": true,
-    "stock": { "value": 75, "unit": "units", "lowStockThreshold": 10 },
+    "stock": {
+      "value": 70,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
     "productImages": [
-      { "filePath": "/seed/books-sapiens.jpg", "fileId": "seed_book_002" }
+      {
+        "filePath": "/seed/books-thinking.jpg",
+        "fileId": "seed_think_001"
+      }
     ],
-    "attributes": { "author": "Yuval Noah Harari", "language": "English", "pages": 443, "publisher": "Harper", "stockUnit": "units" }
+    "attributes": {
+      "author": "Daniel Kahneman",
+      "language": "English",
+      "pages": 499,
+      "publisher": "Farrar, Straus and Giroux",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "The Great Gatsby",
-    "description": "F. Scott Fitzgerald's masterpiece about the mysterious millionaire Jay Gatsby and his obsession with the beautiful Daisy Buchanan, set against the backdrop of the Jazz Age.",
-    "price": 12,
+    "productName": "The Alchemist - Paulo Coelho",
+    "description": "Inspiring tale of Santiago, an Andalusian shepherd boy who travels from Spain to Egypt in search of treasure. A journey about following dreams and listening to your heart.",
+    "price": 16,
     "discount": 0,
     "category": "Books",
     "subCategory": "Fiction",
     "availability": true,
-    "stock": { "value": 6, "unit": "units", "lowStockThreshold": 8 },
+    "stock": {
+      "value": 110,
+      "unit": "units",
+      "lowStockThreshold": 15
+    },
     "productImages": [
-      { "filePath": "/seed/books-gatsby.jpg", "fileId": "seed_book_003" }
+      {
+        "filePath": "/seed/books-alchemist.jpg",
+        "fileId": "seed_alchemist_001"
+      }
     ],
-    "attributes": { "author": "F. Scott Fitzgerald", "language": "English", "pages": 180, "publisher": "Scribner", "stockUnit": "units" }
+    "attributes": {
+      "author": "Paulo Coelho",
+      "language": "English",
+      "pages": 208,
+      "publisher": "HarperOne",
+      "stockUnit": "units"
+    }
   },
   {
-    "productName": "A Brief History of Time",
-    "description": "Stephen Hawking's landmark book on cosmology explores subjects from the Big Bang to black holes to light cones, making complex scientific concepts accessible to general readers.",
-    "price": 16,
-    "discount": 5,
-    "category": "Books",
-    "subCategory": "Science",
-    "availability": true,
-    "stock": { "value": 50, "unit": "units", "lowStockThreshold": 10 },
-    "productImages": [
-      { "filePath": "/seed/books-hawking.jpg", "fileId": "seed_book_004" }
-    ],
-    "attributes": { "author": "Stephen Hawking", "language": "English", "pages": 212, "publisher": "Bantam Books", "stockUnit": "units" }
-  },
-  {
-    "productName": "Refurbished iPhone 13",
-    "description": "Certified refurbished Apple iPhone 13 with 128GB storage, A15 Bionic chip, and dual 12MP camera system. Fully tested and restored to factory settings with 90-day warranty.",
-    "price": 549,
+    "productName": "Rich Dad Poor Dad",
+    "description": "Robert Kiyosaki's classic personal finance book contrasts two fathers' financial philosophies and teaches the fundamentals of financial literacy and wealth building.",
+    "price": 15,
     "discount": 0,
-    "category": "Electronics",
-    "subCategory": "Phones",
+    "category": "Books",
+    "subCategory": "Business",
     "availability": true,
-    "stock": { "value": 10, "unit": "units", "lowStockThreshold": 3 },
+    "stock": {
+      "value": 120,
+      "unit": "units",
+      "lowStockThreshold": 15
+    },
     "productImages": [
-      { "filePath": "/seed/electronics-phone-3.jpg", "fileId": "seed_phone_003" }
+      {
+        "filePath": "/seed/books-richdad.jpg",
+        "fileId": "seed_rich_001"
+      }
     ],
-    "attributes": { "brand": "Apple", "warranty": 0, "condition": "Refurbished", "color": ["Black", "White", "Blue"], "stockUnit": "units" }
+    "attributes": {
+      "author": "Robert Kiyosaki",
+      "language": "English",
+      "pages": 336,
+      "publisher": "Plata Publishing",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Harry Potter Complete Collection",
+    "description": "All 7 Harry Potter books in a beautifully designed box set. Follow Harry, Ron, and Hermione through their magical journey at Hogwarts and beyond.",
+    "price": 85,
+    "discount": 25,
+    "category": "Books",
+    "subCategory": "Children",
+    "availability": true,
+    "stock": {
+      "value": 45,
+      "unit": "units",
+      "lowStockThreshold": 6
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/books-harrypotter.jpg",
+        "fileId": "seed_hp_001"
+      }
+    ],
+    "attributes": {
+      "author": "J.K. Rowling",
+      "language": "English",
+      "pages": 3407,
+      "publisher": "Bloomsbury",
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Dyson V15 Detect Vacuum",
+    "description": "Laser-equipped cordless vacuum with piezo sensor counting and sizing dust particles, LCD screen showing real-time data, and 60 minutes of fade-free power.",
+    "price": 749,
+    "discount": 0,
+    "category": "Home & Kitchen",
+    "subCategory": "Appliances",
+    "availability": true,
+    "stock": {
+      "value": 15,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/home-dyson.jpg",
+        "fileId": "seed_dyson_001"
+      }
+    ],
+    "attributes": {
+      "material": "Plastic",
+      "color": "Yellow",
+      "warranty": 2,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Le Creuset Dutch Oven 5.5qt",
+    "description": "Iconic enameled cast iron Dutch oven with superior heat distribution, chip-resistant enamel, and tight-fitting lid. Perfect for braising, baking, and roasting.",
+    "price": 370,
+    "discount": 0,
+    "category": "Home & Kitchen",
+    "subCategory": "Cookware",
+    "availability": true,
+    "stock": {
+      "value": 20,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/home-lecreuset.jpg",
+        "fileId": "seed_lc_001"
+      }
+    ],
+    "attributes": {
+      "material": "Cast Iron",
+      "color": "Orange",
+      "warranty": 10,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Nespresso Vertuo Plus Coffee Maker",
+    "description": "Automatic coffee machine with Centrifusion technology brewing 5 cup sizes from espresso to alto. Includes Aeroccino milk frother for perfect lattes and cappuccinos.",
+    "price": 199,
+    "discount": 15,
+    "category": "Home & Kitchen",
+    "subCategory": "Appliances",
+    "availability": true,
+    "stock": {
+      "value": 30,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/home-nespresso.jpg",
+        "fileId": "seed_nespresso_001"
+      }
+    ],
+    "attributes": {
+      "material": "Metal",
+      "color": "Black",
+      "warranty": 2,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Philips Hue Starter Kit",
+    "description": "Smart lighting system with 4 color-changing bulbs and Hue Bridge. Control 16 million colors via app, voice, or automation. Works with Alexa, Google, and HomeKit.",
+    "price": 199,
+    "discount": 10,
+    "category": "Home & Kitchen",
+    "subCategory": "Lighting",
+    "availability": true,
+    "stock": {
+      "value": 25,
+      "unit": "units",
+      "lowStockThreshold": 4
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/home-hue.jpg",
+        "fileId": "seed_hue_001"
+      }
+    ],
+    "attributes": {
+      "material": "Glass",
+      "color": "White",
+      "warranty": 2,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "La Mer Crème de la Mer",
+    "description": "Luxury moisturizing cream with Miracle Broth and lime tea concentrate. Transforms skin with deep hydration, soothing, and radiance. The iconic skincare investment.",
+    "price": 380,
+    "discount": 0,
+    "category": "Beauty & Health",
+    "subCategory": "Skincare",
+    "availability": true,
+    "stock": {
+      "value": 18,
+      "unit": "units",
+      "lowStockThreshold": 3
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/beauty-lamer.jpg",
+        "fileId": "seed_lamer_001"
+      }
+    ],
+    "attributes": {
+      "brand": "La Mer",
+      "skinType": "All",
+      "volume": 60,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Dior Sauvage Eau de Parfum",
+    "description": "Bold and fresh fragrance with Calabrian bergamot, ambroxan, and vanilla absolute. A magnetic scent that leaves a lasting impression for the modern man.",
+    "price": 135,
+    "discount": 0,
+    "category": "Beauty & Health",
+    "subCategory": "Fragrances",
+    "availability": true,
+    "stock": {
+      "value": 30,
+      "unit": "units",
+      "lowStockThreshold": 5
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/beauty-sauvage.jpg",
+        "fileId": "seed_sauvage_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Dior",
+      "skinType": "All",
+      "volume": 100,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Olaplex No.3 Hair Perfector",
+    "description": "Bond-building hair treatment that repairs and strengthens damaged hair from within. Reduces breakage and improves hair health with patented Bis-Aminopropyl Diglycol Dimaleate.",
+    "price": 28,
+    "discount": 0,
+    "category": "Beauty & Health",
+    "subCategory": "Hair Care",
+    "availability": true,
+    "stock": {
+      "value": 50,
+      "unit": "units",
+      "lowStockThreshold": 8
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/beauty-olaplex.jpg",
+        "fileId": "seed_olaplex_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Olaplex",
+      "skinType": "All",
+      "volume": 100,
+      "stockUnit": "units"
+    }
+  },
+  {
+    "productName": "Nature Made Multivitamin 130ct",
+    "description": "Complete daily multivitamin with 23 essential vitamins and minerals. Supports immune health, energy metabolism, and bone health. USP verified for quality and purity.",
+    "price": 22,
+    "discount": 15,
+    "category": "Beauty & Health",
+    "subCategory": "Vitamins",
+    "availability": true,
+    "stock": {
+      "value": 80,
+      "unit": "units",
+      "lowStockThreshold": 10
+    },
+    "productImages": [
+      {
+        "filePath": "/seed/beauty-vitamin.jpg",
+        "fileId": "seed_vitamin_001"
+      }
+    ],
+    "attributes": {
+      "brand": "Nature Made",
+      "skinType": "All",
+      "volume": 130,
+      "stockUnit": "units"
+    }
   }
 ]

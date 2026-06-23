@@ -6,7 +6,11 @@
     "phone": 970591234567,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Ramallah", "street": "Al-Bireh St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Ramallah",
+      "street": "Al-Bireh St"
+    },
     "balance": 150,
     "withdrawableBalance": 0
   },
@@ -17,7 +21,11 @@
     "phone": 970592345678,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Nablus", "street": "Al-Midan St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Nablus",
+      "street": "Al-Midan St"
+    },
     "balance": 320,
     "withdrawableBalance": 0
   },
@@ -28,7 +36,11 @@
     "phone": 970593456789,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Hebron", "street": "King David St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Hebron",
+      "street": "King David St"
+    },
     "balance": 500,
     "withdrawableBalance": 100
   },
@@ -39,7 +51,11 @@
     "phone": 970594567890,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Gaza", "street": "Omar Mukhtar St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Gaza",
+      "street": "Omar Mukhtar St"
+    },
     "balance": 75,
     "withdrawableBalance": 0
   },
@@ -50,7 +66,11 @@
     "phone": 970595678901,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Jenin", "street": "Al-Quds St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Jenin",
+      "street": "Al-Quds St"
+    },
     "balance": 200,
     "withdrawableBalance": 50
   },
@@ -61,7 +81,11 @@
     "phone": 970596789012,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Tulkarm", "street": "Al-Ittihad St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Tulkarm",
+      "street": "Al-Ittihad St"
+    },
     "balance": 430,
     "withdrawableBalance": 0
   },
@@ -72,7 +96,11 @@
     "phone": 970597890123,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Bethlehem", "street": "Manger St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Bethlehem",
+      "street": "Manger St"
+    },
     "balance": 90,
     "withdrawableBalance": 0
   },
@@ -83,7 +111,11 @@
     "phone": 970598901234,
     "role": "user",
     "active": false,
-    "adress": { "country": "Palestine", "city": "Jericho", "street": "Al-Nakheel St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Jericho",
+      "street": "Al-Nakheel St"
+    },
     "balance": 0,
     "withdrawableBalance": 0
   },
@@ -94,7 +126,11 @@
     "phone": 970599012345,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Ramallah", "street": "Rukab St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Ramallah",
+      "street": "Rukab St"
+    },
     "balance": 610,
     "withdrawableBalance": 200
   },
@@ -105,8 +141,162 @@
     "phone": 970591122334,
     "role": "user",
     "active": true,
-    "adress": { "country": "Palestine", "city": "Nablus", "street": "Faisal St" },
+    "adress": {
+      "country": "Palestine",
+      "city": "Nablus",
+      "street": "Faisal St"
+    },
     "balance": 260,
     "withdrawableBalance": 0
+  },
+  {
+    "name": "Yousef Hamed",
+    "email": "yousef.h@gmail.com",
+    "password": "password123",
+    "phone": 970592233445,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Hebron",
+      "street": "Al-Shuhada St"
+    },
+    "balance": 340,
+    "withdrawableBalance": 50
+  },
+  {
+    "name": "Maya Samir",
+    "email": "maya.s@gmail.com",
+    "password": "password123",
+    "phone": 970593344556,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Ramallah",
+      "street": "Main St"
+    },
+    "balance": 180,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Hassan Naji",
+    "email": "hassan.n@gmail.com",
+    "password": "password123",
+    "phone": 970594455667,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Bethlehem",
+      "street": "Star St"
+    },
+    "balance": 420,
+    "withdrawableBalance": 100
+  },
+  {
+    "name": "Aya Khaled",
+    "email": "aya.k@gmail.com",
+    "password": "password123",
+    "phone": 970595566778,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Jenin",
+      "street": "Freedom St"
+    },
+    "balance": 95,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Samir Fadi",
+    "email": "samir.f@gmail.com",
+    "password": "password123",
+    "phone": 970596677889,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Nablus",
+      "street": "Old City St"
+    },
+    "balance": 550,
+    "withdrawableBalance": 150
+  },
+  {
+    "name": "Rana Jamal",
+    "email": "rana.j@gmail.com",
+    "password": "password123",
+    "phone": 970597788990,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Tulkarm",
+      "street": "Central St"
+    },
+    "balance": 210,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Fadi Omar",
+    "email": "fadi.o@gmail.com",
+    "password": "password123",
+    "phone": 970598899001,
+    "role": "user",
+    "active": false,
+    "adress": {
+      "country": "Palestine",
+      "city": "Gaza",
+      "street": "Beach St"
+    },
+    "balance": 0,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Laila Ziad",
+    "email": "laila.z@gmail.com",
+    "password": "password123",
+    "phone": 970599900112,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Ramallah",
+      "street": "University St"
+    },
+    "balance": 380,
+    "withdrawableBalance": 80
+  },
+  {
+    "name": "Ziad Hani",
+    "email": "ziad.h@gmail.com",
+    "password": "password123",
+    "phone": 970591010223,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Hebron",
+      "street": "Market St"
+    },
+    "balance": 290,
+    "withdrawableBalance": 0
+  },
+  {
+    "name": "Nadia Salem",
+    "email": "nadia.s@gmail.com",
+    "password": "password123",
+    "phone": 970592121334,
+    "role": "user",
+    "active": true,
+    "adress": {
+      "country": "Palestine",
+      "city": "Bethlehem",
+      "street": "Peace St"
+    },
+    "balance": 470,
+    "withdrawableBalance": 120
   }
 ]

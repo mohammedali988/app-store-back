@@ -38,7 +38,7 @@ export const makeOrder = Errorhandler(async (req, res) => {
     if (product.quantity < count) {
       throw new sendError(
         400,
-        `Only ${product.quantity} units available for product: ${product.productName}`
+        `Only ${product.quantity} units available for product: ${product.productName}`,
       );
     }
 
@@ -85,7 +85,7 @@ export const makeOrder = Errorhandler(async (req, res) => {
 //get all order for admin================================================================
 export const getAllOrders = async (req, res) => {
   try {
-    const orders = await orderModel.find();
+    const orders = await req.queryMongoose;
 
     res.status(200).json({
       success: true,
